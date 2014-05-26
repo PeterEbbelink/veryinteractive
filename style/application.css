@@ -437,7 +437,7 @@ a.library-item:hover {
 }
 
 a.box {
-	margin: -1px -6px -5px 0;
+	margin: -1px -6px -5px 0 !important;
 	padding: 0;
 	height: 64px;
 	width: 64px;
@@ -459,6 +459,12 @@ a#style06:hover { background: gray; }
 a#style07:hover { background: yellow; }
 a#style08:hover { background: red; }
 
+
+/* THEMES */
+
+.scary-theme {
+
+}
 
 /* MEDIA QUERIES */
 		

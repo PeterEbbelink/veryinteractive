@@ -11,6 +11,22 @@
   <link rel="stylesheet" href="style/application.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="script/script.js"></script>
+  <script>
+  $( document ).ready(function() {
+
+    console.log("hi");
+
+    $("#style01").click(function(){
+        if($(this).find("link").length <= 0) {
+            $(this).append('<link rel="stylesheet" href="style/theme-scary.css">');
+            $('body').append('<audio><source src="sounds/perfect-thunder.mp3" type="audio/mp3"></audio>');
+        }
+        else
+            $(this).find("link").remove();
+    });
+
+  });
+  </script>
 </head>
 
 <body>
