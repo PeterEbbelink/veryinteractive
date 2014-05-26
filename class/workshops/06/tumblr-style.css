@@ -1,0 +1,76 @@
+body {
+	margin: 20px;
+	background: #f0f0f0;
+	font-family: times new roman, serif;
+	font-size: 24px;
+	line-height: 26px;
+	}
+	
+body.permalink {
+	background: #000;
+	color: #fff;
+	}
+	
+ul, li { padding: 0; margin: 0; }
+
+h1 { font-size: 24px; line-height: 26px; font-weight: normal; margin: 0; padding: 0; }
+	
+a, a:visited { text-decoration: none; color: #000; background: url('http://www.yaleinteractivedesign.com/images/moving-underline.gif') repeat-x; background-position: 0 100%; }
+a:hover { background:#ffff6e url('http://www.yaleinteractivedesign.com/images/moving-underline.gif') repeat-x; background-position: 0 100%; }	
+a:active { color: magenta; border-color: magenta; }
+
+ul.title { margin: 10px 10px 30px; float: left; }
+ul.title li { display: none; z-index: 5; position: absolute; }
+ul.title:hover li { display: block; }
+
+.clearfix { clear: both; }
+	
+.post {
+	padding: 10px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	width: 250px;
+	}
+
+.post img {
+	padding: 0;
+	-webkit-transition: -webkit-filter 5s;
+	-webkit-transition: 0.2s ease-in;
+	   -moz-transition: 0.2s ease-in;
+		-ms-transition: 0.2s ease-in;
+		 -o-transition: 0.2s ease-in;
+			transition: 0.2s ease-in;
+	}
+
+.post img:hover {
+	cursor: pointer;
+	-webkit-transition: 0.2s ease-in;
+	   -moz-transition: 0.2s ease-in;
+		-ms-transition: 0.2s ease-in;
+		 -o-transition: 0.2s ease-in;
+			transition: 0.2s ease-in;
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
+	}
+
+.post-permalink { 
+	width: 700px;
+	margin: 30px auto;
+	}
+	
+body.permalink a, body.permalink a:visited { color: #fff; background: url('http://www.yaleinteractivedesign.com/images/moving-underline-white.gif') repeat-x; background-position: 0 100%; -webkit-font-smoothing: antialiased; }
+body.permalink a.permalink:hover { background:#fff; color: #000; url('http://www.yaleinteractivedesign.com/images/moving-underline.gif') repeat-x; background-position: 0 100%; }	
+body.permalink a.permalink:active { color: magenta; border-color: magenta; }
+
+body.permalink ul.title { margin-top: 0px; }
+
+body.permalink .prev, body.permalink .next { position: fixed; top: 400px; font-size: 72px; }
+body.permalink .prev a, body.permalink .next a { background: 0px none; }
+body.permalink .prev { left: 20px; }
+body.permalink .next { right: 20px; }
+
+.post a, body.permalink .post-permalink a, body.permalink .post-permalink a:hover { background: 0px none; }

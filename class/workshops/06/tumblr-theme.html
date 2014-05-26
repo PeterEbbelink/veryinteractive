@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="color:Background" content="#ffffff"/>
+    <meta name="font:Body" content="'Helvetica Neue',Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif"/>
+    <meta name="color:Separator" content="#eeeeee"/>
+    <meta name="color:Description" content="#eeeeee"/>
+    <meta name="color:Post Info" content="#aaaaaa"/>    
+    <meta name="text:Disqus Shortname" content="" />
+    <title>{block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <link rel="stylesheet" type="text/css" href="http://www.yaleinteractivedesign.com/workshop05/tumblr-style.css">
+    <script src="http://static.tumblr.com/shrl2lc/Kb0kl4vtp/jquery.js" type="text/javascript" charset="utf-8"></script>
+<link rel="shortcut icon" href="{Favicon}" />
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+  </head>
+  {block:IndexPage}<body>{/block:IndexPage}
+  {block:PermalinkPage}<body class="permalink">{/block:PermalinkPage}
+    <div id="wrap">
+      <div id="head">
+        <ul class="title">
+		<h1><a href="/">{Title}</a></h1>
+		    <li><a href="archive">Archive</a></li>
+		</ul>
+		
+		{block:IndexPage}<div class="clearfix"></div>{/block:IndexPage}
+		
+        {block:HasPages}
+        	<br/><br/>
+            {block:Pages}<a href="{URL}">{Label}</a>&nbsp;&nbsp;{/block:Pages}
+        	<br/><br/>
+        {/block:HasPages}
+        {block:AskEnabled}<a href="/ask">{AskLabel}</a>&nbsp;&nbsp;{/block:AskEnabled}
+        {block:SubmissionsEnabled}<a href="/submit">{SubmitLabel}</a>{/block:SubmissionsEnabled}
+      </div>
+      
+      <div id="content">
+        
+        {block:Posts}
+        
+        {block:Text}
+        <div class="post text">
+          {block:Date}<a href="{Permalink}" class="permalink">#</a>{/block:Date}
+         
+          {block:Title}<h3>{Title}</h3>{/block:Title}
+          {Body}
+
+        </div>
+        {/block:Text}
+        
+        {block:Photo}
+        {block:IndexPage}<div class="post photo">{/block:IndexPage}
+        {block:PermalinkPage}<div class="post-permalink photo">{/block:PermalinkPage}
+          {block:IndexPage}{block:Date}<a href="{Permalink}" class="permalink"><img alt="{PhotoAlt}" src="{PhotoURL-250}"/></a>{/block:Date}{/block:IndexPage}
+          {block:PermalinkPage}<a href="{PhotoURL-HighRes}" class="permalink"><img alt="{PhotoAlt}" src="{PhotoURL-HighRes}"/></a>{/block:PermalinkPage}
+          {block:Caption}{Caption}{/block:Caption}
+        </div>
+        {/block:Photo}
+        
+        {block:Quote}
+        <div class="post quote">
+          {block:Date}<a href="{Permalink}" class="permalink">#</a>{/block:Date}
+          <div class="deco">&#8220;</div>
+          <blockquote>{Quote}</blockquote>
+          {block:Source}<cite>{Source}</cite>{/block:Source}
+          {block:Date}<div class="info">{lang:This was posted TimeAgo}. {block:IfDisqusShortname}{lang:It has NoteCount notes and 0 comments}{/block:IfDisqusShortname}{block:IfNotDisqusShortname}{lang:It has NoteCount notes}{/block:IfNotDisqusShortname}.</div>{/block:Date}
+        </div>
+        {/block:Quote}
+        
+        {block:Link}
+        <div class="post link">
+          {block:Date}<a href="{Permalink}" class="permalink">#</a>{/block:Date}
+          <a class="go" href="{URL}">{Name}</a>
+          {block:Description}{Description}{/block:Description}
+
+        </div>
+        {/block:Link}
+        
+        {block:Chat}
+        <div class="post chat">
+          {block:Date}<a href="{Permalink}" class="permalink">#</a>{/block:Date}
+          {block:Title}<h3>{Title}</h3>{/block:Title}
+          <ul class="conv">
+            {block:Lines}<li class="{Alt}">{block:Label}<strong>{Label}</strong> {/block:Label}{Line}</li>{/block:Lines}
+          </ul>
+
+        </div>
+        {/block:Chat}
+        
+        {block:Audio}
+        <div class="post audio">
+          {block:Date}<a href="{Permalink}" class="permalink">#</a>{/block:Date}
+          {AudioPlayerWhite}
+          {block:Caption}{Caption}{/block:Caption}
+
+        </div>
+        {/block:Audio}
+        
+        {block:Video}
+        <div class="post video">
+          {block:Date}<a href="{Permalink}" class="permalink">#</a>{/block:Date}
+          {Video-500}
+          {block:Caption}{Caption}{/block:Caption}
+
+        </div>
+        {/block:Video}
+        
+        {block:Date}
+        {block:IfDisqusShortname}
+        {block:Permalink}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+        <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+        {/block:Permalink}
+        {/block:IfDisqusShortname}
+        {block:Date}
+        
+        {block:PostNotes}
+          {PostNotes}
+        {/block:PostNotes}
+        {/block:Posts}
+        
+        {block:Pagination}
+        <div id="nav">
+          {block:PreviousPage}<a href="{PreviousPage}" class="prev">{lang:Previous page}</a>{/block:PreviousPage}
+          {block:NextPage}<a href="{NextPage}" class="next">{lang:Next page}</a>{/block:NextPage}
+          <div class="clr"></div>
+        </div>
+         {/block:Pagination}
+         
+         {block:PermalinkPagination}
+  			{block:NextPost}
+  			<div class="prev"><a href="{NextPost}">&#8618;</a></div>
+  			{/block:NextPost}
+  			{block:PreviousPost} 
+  			<div class="next"><a href="{PreviousPost}">&#8617;</a></div>
+  			{/block:PreviousPost}
+  		{/block:PermalinkPagination}
+  		
+      </div>
+      
+      <div id="footer">
+        <div id="desc">
+          {Description}
+        </div>
+      </div>
+    </div>
+    
+    {block:IfDisqusShortname}
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+        if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+        }
+        }
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+    //]]>
+    </script>
+    {/block:IfDisqusShortname}
+  </body>
+</html>

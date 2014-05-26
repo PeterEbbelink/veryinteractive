@@ -1,0 +1,12 @@
+body { background: #000; color: #fff; }
+
+.post-permalink { 
+	width: 700px;
+	margin: 30px auto;
+	}
+	
+ul.title { margin-top: 0px; }
+	
+a.permalink, a.permalink:visited { color: #fff; background: url('http://www.yaleinteractivedesign.com/images/moving-underline-white.gif') repeat-x; background-position: 0 100%; -webkit-font-smoothing: antialiased; }
+a.permalink:hover { background:#fff; color: #000; url('http://www.yaleinteractivedesign.com/images/moving-underline.gif') repeat-x; background-position: 0 100%; }	
+a.permalink:active { color: magenta; border-color: magenta; }

@@ -1,0 +1,44 @@
+body {
+      background: url(jakegreen.gif) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.box{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+a {
+    font-family: 'Carter One';
+    text-decoration:none;
+    color:magenta;
+}
+
+.jerome {
+          font-family: 'Covered By Your Grace', cursive;
+          font-size:100px;
+          color:navy;
+}
+.jake {
+	font-family: 'Gafata', sans-serif;
+	font-size:100px;
+  color:navy;
+}
+
+
+#jake {
+		width: 700px;
+		height: 800px;
+		position:relative;
+		top:30px;
+    margin-left:auto; 
+    margin-right:0px;
+}

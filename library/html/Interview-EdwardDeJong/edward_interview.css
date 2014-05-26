@@ -1,0 +1,56 @@
+body {
+	font-family: 'courier';
+	background-color: #33FFCC;
+  margin-left: 90px;
+width: 200px;}
+
+h5{      padding-left: 20%;
+      line-height:170%;
+
+}
+
+
+a{text-decoration:none;
+}
+{ background: #444;  
+ color: white;  
+    }  
+  
+    div{  
+      line-height:230%;
+      width: 800px;
+      padding-top: 10px;  
+      padding-right: 30%;  
+      padding-bottom: 0.25px;  
+      padding-left: 5px;  
+    }  
+    .edward {
+        color: #33FF33;
+      }
+
+#edward
+{color:blue;
+} 
+a:active {background-color:#FF704D;}
+a { text-decoration: none; border-bottom:3px dashed; 
+text-color: orange;}
+a:hover { text-transform:uppercase;
+background: orange; }
+
+a:link {text-color: orange}
+
+.grow img {
+  height: 67.8px;
+  width: 170px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;}
+ 
+.grow img:hover {
+  height: 239.4px;
+  width: 600px;
+}
+
