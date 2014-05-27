@@ -26,14 +26,8 @@ ul, li {
 	margin: 0;
 }
 
-/*@-webkit-keyframes pulse {
-    0% { background: #ffff6e; }
-    75% { background: #f0f0f0; }
-    100% { background: #ffff6e; }
-}*/
-
 ::selection {
-	background: #ffff6e;
+	background: #ffffff;
 	}
 
 /* BULLETED LISTS */
@@ -128,13 +122,13 @@ nav li {
 }
 
 nav li:hover {
-	background: url('../images/bullet-empty.png') no-repeat;
+	background: url('../images/bullet-empty.svg') no-repeat;
 	background-size: 6px 6px;
 	background-position:center 24%;
 }
 
 nav .current, nav li.current:hover {
-	background: url('../images/bullet.png') no-repeat;
+	background: url('../images/bullet.svg') no-repeat;
 	background-size: 6px 6px;
 	background-position:center 20%;
 	cursor: pointer;
@@ -146,7 +140,7 @@ nav .home-link {
 	top: 22px;
 	height: 12px;
 	width: 12px;
-	background: url('../images/home.png') no-repeat;
+	background: url('../images/home.svg') no-repeat;
 	background-size: 12px 12px;
 }
 
@@ -437,7 +431,7 @@ a.library-item:hover {
 }
 
 a.box {
-	margin: -1px -6px -5px 0 !important;
+	margin: -1px -6px -5px 0;
 	padding: 0;
 	height: 64px;
 	width: 64px;
@@ -450,21 +444,133 @@ a.box {
 	-webkit-font-smoothing: antialiased;
 }
 
-a#style01:hover { background: cyan; }
-a#style02:hover { background: pink; }
-a#style03:hover { background: lime; }
-a#style04:hover { background: orange; }
-a#style05:hover { background: blue; }
-a#style06:hover { background: gray; }
-a#style07:hover { background: yellow; }
-a#style08:hover { background: red; }
+a#gutenblood:hover { background: red; }
+a#style01:hover { background: #ffff6e; }
+a#style02:hover { background: #ffff6e; }
+a#style03:hover { background: #ffff6e; }
+a#style04:hover { background: #ffff6e; }
+a#style05:hover { background: #ffff6e; }
+a#style06:hover { background: #ffff6e; }
+a#style07:hover { background: #ffff6e; }
+a#style08:hover { background: #ffff6e; }
 
+/* THEMES! */
 
-/* THEMES */
+/* gutenblood THEME */
 
-.scary-theme {
-
+@font-face {
+  font-family: 'its_dripping_medium';
+  src: url('../fonts/its_dripping_-webfont.eot');
+  src: url('../fonts/its_dripping_-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/its_dripping_-webfont.woff') format('woff'),
+       url('../fonts/its_dripping_-webfont.ttf') format('truetype'),
+       url('../fonts/its_dripping_-webfont.svg#its_dripping_medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+body.gutenblood a#gutenblood { background: red; }
+
+body.gutenblood,
+body.gutenblood nav a,
+body.gutenblood .document.text,
+body.gutenblood a.library-item,
+body.gutenblood .top-link a {
+	background: black;
+	color: red;
+}
+
+body.gutenblood .document a {
+	color: red;
+}
+
+body.gutenblood .document a:hover {
+	background: red;
+	color: black;
+}
+
+body.gutenblood .document.text,
+body.gutenblood .document.text h2 {
+  font-family: 'its_dripping_medium' !important;
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+body.gutenblood .document,
+body.gutenblood .document h1,
+body.gutenblood .document h2 {
+	font-family: 'its_dripping_medium' !important;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+body.gutenblood nav,
+body.gutenblood .library-row,
+body.gutenblood .top-link a {
+	border-color: red;
+}
+
+@-webkit-keyframes pulse {
+    0% { background: black; }
+    50% { background: white; }
+    100% { background: black; }
+}
+
+body.gutenblood a.library-item:hover,
+body.gutenblood .top-link a:hover {
+	-webkit-animation: pulse 0.1s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+}
+
+body.gutenblood .house {
+	fill: red;
+}
+
+body.gutenblood .window {
+	background: black;
+	border-color: red;
+}
+
+body.gutenblood .box {
+	border-color: red;
+}
+
+body.gutenblood.visual-tweets,
+body.gutenblood.twenty-five-variations,
+body.gutenblood.website-for-a-future-event,
+body.gutenblood.weather {
+	color: black;
+	background: red !important;
+}
+
+body.gutenblood a.visual-tweets,
+body.gutenblood a.twenty-five-variations,
+body.gutenblood a.website-for-a-future-event,
+body.gutenblood a.weather {
+	background: red !important;
+	border-color: red !important;
+	color: black;
+}
+
+body.gutenblood nav .home-link {
+	background: url('../images/home-red.svg') no-repeat;
+}
+
+body.gutenblood nav li.current,
+body.gutenblood nav li.current:hover {
+	background: url('../images/bullet-red.svg') no-repeat;
+	background-size: 6px 6px;
+	background-position:center 20%;
+}
+
+body.gutenblood nav li:hover {
+	background: url('../images/bullet-empty-red.svg') no-repeat;
+	background-size: 6px 6px;
+	background-position:center 24%;
+}
+
 
 /* MEDIA QUERIES */
 		

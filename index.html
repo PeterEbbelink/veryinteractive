@@ -11,22 +11,7 @@
   <link rel="stylesheet" href="style/application.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="script/script.js"></script>
-  <script>
-  $( document ).ready(function() {
-
-    console.log("hi");
-
-    $("#style01").click(function(){
-        if($(this).find("link").length <= 0) {
-            $(this).append('<link rel="stylesheet" href="style/theme-scary.css">');
-            $('body').append('<audio><source src="sounds/perfect-thunder.mp3" type="audio/mp3"></audio>');
-        }
-        else
-            $(this).find("link").remove();
-    });
-
-  });
-  </script>
+  <script src="script/jquery.cookie.js"></script>
 </head>
 
 <body>
@@ -42,20 +27,15 @@
 
 <div id="main-column">
 
-  <!--
-  <div class="motto">
-	</div>
-  -->
-
   <div id="house">
 
-    <img src="images/house.svg">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="639.375px" height="586px" viewBox="0 0 639.375 586" enable-background="new 0 0 639.375 586" xml:space="preserve"><polygon class="house" points="319.7,0 0,283.7 70.9,283.7 70.9,586 568.8,586 568.8,283.7 639.4,283.7"/></svg>
 
     <div class="window left">
       <a href="#" class="box" id="style01"></a>
       <a href="#" class="box" id="style02"></a>
       <a href="#" class="box" id="style03"></a>
-      <a href="#" class="box" id="style04"></a>
+      <a href="#" class="box" id="gutenblood"></a>
     </div>
 
     <div class="window right">
