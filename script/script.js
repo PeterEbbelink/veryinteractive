@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   // var mottos = [
   //   "Every lie creates a parallel world",
   //   "experiment: play",
@@ -50,25 +50,25 @@ $( document ).ready(function() {
           // no theme yet
           case 0:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blackText-yellowBackground');
+              $('body').addClass('theme01');
               $.cookie('theme', null);
-              $.cookie('theme', 'blackText-yellowBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme01',{ expires: 7, path: '/' });
           break;
           
           // no theme yet
           case 1:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blackText-pinkBackground');
+              $('body').addClass('theme02');
               $.cookie('theme', null);
-              $.cookie('theme', 'blackText-pinkBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme02',{ expires: 7, path: '/' });
           break;
           
           // no theme yet
           case 2:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blueText-whiteBackground');
+              $('body').addClass('theme03');
               $.cookie('theme', null);
-              $.cookie('theme', 'blueText-whiteBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme03',{ expires: 7, path: '/' });
           break;
 
           // GUTENBLOOD THEME
@@ -82,33 +82,33 @@ $( document ).ready(function() {
           // no theme yet
           case 4:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blueText-whiteBackground');
+              $('body').addClass('theme05');
               $.cookie('theme', null);
-              $.cookie('theme', 'blueText-whiteBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme05',{ expires: 7, path: '/' });
           break;
 
           // no theme yet
           case 5:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blueText-whiteBackground');
+              $('body').addClass('theme06');
               $.cookie('theme', null);
-              $.cookie('theme', 'blueText-whiteBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme06',{ expires: 7, path: '/' });
           break;
 
           // no theme yet
           case 6:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blueText-whiteBackground');
+              $('body').addClass('theme07');
               $.cookie('theme', null);
-              $.cookie('theme', 'blueText-whiteBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme07',{ expires: 7, path: '/' });
           break;
 
           // no theme yet
           case 7:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('blueText-whiteBackground');
+              $('body').addClass('theme08');
               $.cookie('theme', null);
-              $.cookie('theme', 'blueText-whiteBackground',{ expires: 7, path: '/' });
+              $.cookie('theme', 'theme08',{ expires: 7, path: '/' });
           break;
               
       }

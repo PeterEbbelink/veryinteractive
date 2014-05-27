@@ -456,7 +456,17 @@ a#style08:hover { background: #ffff6e; }
 
 /* THEMES! */
 
-/* gutenblood THEME */
+body.theme01 { background: #f0f0f0; }
+body.theme02 { background: #f0f0f0; }
+body.theme03 { background: #f0f0f0; }
+body.theme04 { background: #f0f0f0; }
+body.theme05 { background: #f0f0f0; }
+body.theme06 { background: #f0f0f0; }
+body.theme07 { background: #f0f0f0; }
+body.theme08 { background: #f0f0f0; }
+
+
+/* GUTENBLOOD THEME */
 
 @font-face {
   font-family: 'its_dripping_medium';
