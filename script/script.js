@@ -51,7 +51,6 @@ $(document).ready(function() {
           case 0:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme01');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme01',{ expires: 7, path: '/' });
           break;
           
@@ -59,7 +58,6 @@ $(document).ready(function() {
           case 1:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme02');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme02',{ expires: 7, path: '/' });
           break;
           
@@ -67,7 +65,6 @@ $(document).ready(function() {
           case 2:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme03');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme03',{ expires: 7, path: '/' });
           break;
 
@@ -75,7 +72,6 @@ $(document).ready(function() {
           case 3:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('gutenblood');
-              $.cookie('theme', null);
               $.cookie('theme', 'gutenblood',{ expires: 7, path: '/' });
           break;
 
@@ -83,7 +79,6 @@ $(document).ready(function() {
           case 4:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme05');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme05',{ expires: 7, path: '/' });
           break;
 
@@ -91,7 +86,6 @@ $(document).ready(function() {
           case 5:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme06');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme06',{ expires: 7, path: '/' });
           break;
 
@@ -99,7 +93,6 @@ $(document).ready(function() {
           case 6:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme07');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme07',{ expires: 7, path: '/' });
           break;
 
@@ -107,7 +100,6 @@ $(document).ready(function() {
           case 7:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme08');
-              $.cookie('theme', null);
               $.cookie('theme', 'theme08',{ expires: 7, path: '/' });
           break;
               
