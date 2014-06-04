@@ -38,69 +38,51 @@ $(document).ready(function() {
   // });
 
   //If Cookie isn't blank (i.e. do we have a cookie set at all?)
+
+  console.log($.cookie('theme'));
+
+  if($.cookie('theme') == undefined) {
+    console.log("It's undefined");
+    $('body').removeClass($.cookie('theme'));
+    $('body').addClass('gran-turismo');
+    $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
+  }
+
+  var colored_words = $('.text-itself p, .text-itself h2, .text-itself blockquote');
+
+  if($.cookie('theme') == 'gran-turismo' && $('.text-itself').length){
+    $(colored_words).lettering('words');
+  }
+
   if($.cookie('theme')!='') {
     $('body').addClass($.cookie('theme'));  //set the body to the cookie theme
   }
 
-  $('.window a').each(function(index) {
+  $('.dots a').each(function(index) {
     $(this).click(function(e) {
       e.preventDefault();
         
       switch(index) {
-          // no theme yet
+          // GRAN TURISMO
           case 0:
               $('body').removeClass($.cookie('theme'));
-              $('body').addClass('theme01');
-              $.cookie('theme', 'theme01',{ expires: 7, path: '/' });
+              $('body').addClass('gran-turismo');
+              $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
+              $(colored_words).lettering('words');
           break;
           
-          // no theme yet
+          // COMING SOON THEME
           case 1:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme02');
               $.cookie('theme', 'theme02',{ expires: 7, path: '/' });
           break;
-          
-          // no theme yet
-          case 2:
-              $('body').removeClass($.cookie('theme'));
-              $('body').addClass('theme03');
-              $.cookie('theme', 'theme03',{ expires: 7, path: '/' });
-          break;
 
           // GUTENBLOOD THEME
-          case 3:
+          case 2:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('gutenblood');
               $.cookie('theme', 'gutenblood',{ expires: 7, path: '/' });
-          break;
-
-          // no theme yet
-          case 4:
-              $('body').removeClass($.cookie('theme'));
-              $('body').addClass('theme05');
-              $.cookie('theme', 'theme05',{ expires: 7, path: '/' });
-          break;
-
-          // no theme yet
-          case 5:
-              $('body').removeClass($.cookie('theme'));
-              $('body').addClass('theme06');
-              $.cookie('theme', 'theme06',{ expires: 7, path: '/' });
-          break;
-
-          // no theme yet
-          case 6:
-              $('body').removeClass($.cookie('theme'));
-              $('body').addClass('theme07');
-              $.cookie('theme', 'theme07',{ expires: 7, path: '/' });
-          break;
-
-          // no theme yet
-          case 7:
-              $('body').removeClass($.cookie('theme'));
-              $('body').addClass('theme08');
-              $.cookie('theme', 'theme08',{ expires: 7, path: '/' });
           break;
               
       }
