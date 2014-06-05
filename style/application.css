@@ -193,10 +193,6 @@ nav .home-link {
 	-o-transition: .1s background ease-out;
 }
 
-.top-link a:hover {
-	background: rgb(253,238,47);
-}
-
 /* DOCUMENTS */
 
 .document {
@@ -219,13 +215,9 @@ nav .home-link {
 	text-align: left;
 }
 
-.document.text .side code {
-	display: none;
-}
-
-
-.document.text code {
-	font-size: 28px;
+.document .side {
+	width: 100px;
+	float: left;
 }
 
 .text-itself {
@@ -352,7 +344,7 @@ nav .home-link {
 	background-image: none !important;
 }
 .twenty-five-variations .top-link a:hover {
-	background: rgb(95,142,12);
+	background: rgb(95,142,12) !important;
 }
 
 .website-for-a-future-event, a.website-for-a-future-event {
@@ -361,7 +353,7 @@ nav .home-link {
 	background-image: none !important;
 }
 .website-for-a-future-event .top-link a:hover {
-	background: rgb(17,148,244);
+	background: rgb(17,148,244) !important;
 }
 
 .weather, a.weather {
@@ -370,7 +362,7 @@ nav .home-link {
 	background-image: none !important;
 }
 .weather .top-link a:hover {
-	background: rgb(255,44,57);
+	background: rgb(255,44,57) !important;
 }
 
 /* TEXTS LIBRARY */
@@ -409,8 +401,23 @@ a.library-item {
 	text-transform: uppercase;
 }
 		
-a.library-item:hover {
-	background: rgb(253,238,47);
+a.library-item:hover,
+.top-link a:hover {
+	background: #FDEE2F;
+}
+
+@-webkit-keyframes pulse_pleasant {
+    0% { background: #FDEE2F; }
+    50% { background: #BEC6C9; }
+    100% { background: #FDEE2F; }
+}
+
+a.library-item:hover,
+.top-link a:hover {
+	-webkit-animation: pulse_pleasant 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .motto {
@@ -547,8 +554,30 @@ body.gran-turismo a#gran-turismo:hover {
 }
 
 body.gran-turismo {
-	background: #BEC6C9;
-	/*background: #ffffff;*/
+	background: #ffffff;
+}
+
+body.gran-turismo .top-link a {
+	background: #ffffff;
+}
+
+body.gran-turismo a.library-item:hover,
+body.gran-turismo .top-link a:hover {
+	background: #FDEE2F;
+}
+
+@-webkit-keyframes gran_pulse_pleasant {
+    0% { background: #FDEE2F; }
+    50% { background: #FFFFFF; }
+    100% { background: #FDEE2F; }
+}
+
+body.gran-turismo a.library-item:hover,
+body.gran-turismo .top-link a:hover {
+	-webkit-animation: gran_pulse_pleasant 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 body.gran-turismo #greeting,
@@ -582,20 +611,6 @@ body.gran-turismo.twenty-five-variations .document.text h2 { color: rgb(95,142,1
 body.gran-turismo.top-link .document.text h2 { color: rgb(17,148,244); }
 body.gran-turismo.weather .document.text h2 { color: rgb(255,44,57); }*/
 
-
-@-webkit-keyframes pulse_pleasant {
-    0% { background: #FDEE2F; }
-    50% { background: #BEC6C9; }
-    100% { background: #FDEE2F; }
-}
-
-body.gran-turismo a.library-item:hover {
-	-webkit-animation: pulse_pleasant 1.2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
 body.gran-turismo .text-itself [class*="word"]:nth-child(4n+1) {
   color: rgb(72,106,22);
 }
@@ -625,6 +640,11 @@ body.gran-turismo .text-itself [class*="word"]:nth-child(4n+4) {
 
 body.gutenblood a#gutenblood { background: red; }
 
+body.gutenblood #house {
+	background: #000000 url('../images/town-scary.svg') no-repeat;
+	background-size: 100% auto;
+}
+
 body.gutenblood,
 body.gutenblood nav a,
 body.gutenblood .document.text,
@@ -649,7 +669,8 @@ body.gutenblood .document a:hover {
 }
 
 body.gutenblood .document.text,
-body.gutenblood .document.text h2 {
+body.gutenblood .document.text h2,
+body.gutenblood #greeting {
   font-family: 'its_dripping_medium' !important;
   font-size: 42px;
   line-height: 48px;
@@ -660,11 +681,24 @@ body.gutenblood .document,
 body.gutenblood .document h2,
 body.gutenblood .document.text .caption,
 body.gutenblood .document.text .notes,
-body.gutenblood .document.text blockquote {
+body.gutenblood .document.text blockquote,
+body.gutenblood .document .centered h1 {
 	font-family: 'its_dripping_medium' !important;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: normal;
+}
+
+body.gutenblood .document a {
+	color: red;
+	background: url('../images/moving-underline-red.gif') repeat-x;
+	background-position: 0 100%;
+}
+
+body.gutenblood .document a:hover {
+	background:red url('../images/moving-underline-red.gif') repeat-x;
+	color: black;
+	background-position: 0 100%;
 }
 
 body.gutenblood nav,
@@ -702,8 +736,8 @@ body.gutenblood.visual-tweets,
 body.gutenblood.twenty-five-variations,
 body.gutenblood.website-for-a-future-event,
 body.gutenblood.weather {
-	color: black;
-	background: red !important;
+	color: red;
+	background: black !important;
 }
 
 body.gutenblood a.visual-tweets,
@@ -745,15 +779,51 @@ body.gutenblood .dots a:hover {
 
 
 /* MEDIA QUERIES */
-		
-@media screen all and (max-width: 1200px) {
-		}
 
-@media screen and (max-width: 850px) {
-		}
-		
-@media screen and (max-width: 650px) {
-		}
+@media screen and (max-width: 895px) {
+
+	.side {
+		display: none;
+	}
+
+}
 		
 @media screen and (max-width: 480px) {
-		}
+
+	nav {
+		display: block;
+		height: auto;
+		padding: 12px 0;
+	}
+
+	nav li {
+		display: block;
+		width: 100%;
+		padding: 4px 0;
+		background-position: 96% !important;
+	}
+
+	nav li:hover {
+		background-position: 96% !important;
+	}
+
+	nav li.current {
+		background: url('../images/bullet.svg') no-repeat;
+		background-size: 6px 6px;
+		background-position: 96% !important;
+		cursor: pointer;
+	}
+
+	.accordion-year {
+		display: none;
+	}
+
+	#greeting {
+		bottom: 28px;
+	}
+
+	#house {
+		top: 150px;
+	}
+
+}

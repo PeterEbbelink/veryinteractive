@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1200px" height="806.537px" viewBox="0 0 1200 806.537" enable-background="new 0 0 1200 806.537" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="599.9995" y1="-126.4141" x2="599.9995" y2="107.7654" gradientTransform="matrix(1 0 0 1 0 125.0742)">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="1" style="stop-color:#FF0000"/>
+	</linearGradient>
+	<rect y="-1" fill="url(#SVGID_1_)" width="1200" height="233.363"/>
+	<rect y="232.363" fill="#510000" width="1200" height="573.2"/>
+	<polygon points="424.9,400.363 0,400.363 0,470.363 351.5,470.363 0,805.562 601,805.562 1202,805.562 1086.6,695.463 
+		1200,695.463 1200,501.363 883,501.363 760.9,384.863 1200,384.863 1200,347.363 721.5,347.363 601,232.363 	"/>
+	<rect x="1015.5" y="224.463" fill="#634E2F" width="30.8" height="107.9"/>
+	<polygon fill="#FF0000" points="680,235.363 779.2,140.263 878.5,272.363 	"/>
+	<rect x="737.8" y="242.363" width="140.7" height="90"/>
+	<polygon fill="#C40000" points="680,235.363 679.8,283.063 737.8,332.363 738,242.363 	"/>
+	<g>
+		<path fill="#FFFFFF" d="M599,232.363"/>
+	</g>
+	<polygon fill="#FF0000" points="0,195.463 0,407.463 279.9,310.363 60,108.363 	"/>
+	<polyline fill="#C40000" points="279.9,496.363 110,636.363 109.9,366.363 279.9,310.363 	"/>
+	<polygon points="0,366.463 0,636.363 110,636.363 110,366.363 	"/>
+	<polygon fill="#FF0000" points="812,254.963 961,96.363 1110,294.363 940,444.363 	"/>
+	<rect x="899" y="294.363" width="211" height="186"/>
+	<polygon fill="#C40000" points="812,254.963 812,406.363 899,480.363 899,294.363 	"/>
+	<rect x="367" y="204.363" width="48" height="168"/>
+	<g>
+		<path fill="#FF0000" d="M391,272.338c55.781,0,101-45.22,101-101c0-55.78-45.219-101-101-101s-101,45.22-101,101
+			c0,55.825,45.2,101.025,101,101.025"/>
+	</g>
+</g>
+</svg>

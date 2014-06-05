@@ -44,8 +44,8 @@ $(document).ready(function() {
   if($.cookie('theme') == undefined) {
     console.log("It's undefined");
     $('body').removeClass($.cookie('theme'));
-    $('body').addClass('gran-turismo');
-    $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
+    $('body').addClass('gutenblood');
+    $.cookie('theme', 'gutenblood',{ expires: 7, path: '/' });
   }
 
   var colored_words = $('.text-itself p, .text-itself h2, .text-itself blockquote');
@@ -62,29 +62,29 @@ $(document).ready(function() {
     $(this).click(function(e) {
       e.preventDefault();
         
-      switch(index) {
-          // GRAN TURISMO
+      switch(index) {       
+          // DEFAULT THEME
           case 0:
-              $('body').removeClass($.cookie('theme'));
-              $('body').addClass('gran-turismo');
-              $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
-              $(colored_words).lettering('words');
-          break;
-          
-          // COMING SOON THEME
-          case 1:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('theme02');
               $.cookie('theme', 'theme02',{ expires: 7, path: '/' });
           break;
 
           // GUTENBLOOD THEME
-          case 2:
+          case 1:
               $('body').removeClass($.cookie('theme'));
               $('body').addClass('gutenblood');
               $.cookie('theme', 'gutenblood',{ expires: 7, path: '/' });
           break;
-              
+
+          // GRAN TURISMO
+          case 2:
+              $('body').removeClass($.cookie('theme'));
+              $('body').addClass('gran-turismo');
+              $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
+              $(colored_words).lettering('words');
+          break;
+                        
       }
     });
   });
