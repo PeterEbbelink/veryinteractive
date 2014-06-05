@@ -312,12 +312,6 @@ nav .home-link {
 	margin-left: 2em;
 }
 
-.caption {
-	font-size: 12px;
-	line-height: 14px;
-	font-family: Helvetica;
-}
-
 #main-column {
 	margin: 0;
 }
@@ -331,6 +325,24 @@ nav .home-link {
 .library-row h2 {
 	vertical-align: -2px;
 }
+
+
+/* TEXT SPECIFICS */
+
+.perec-box {
+	border: 1px solid black;
+	height: 400px;
+	width: 400px;
+}
+
+.caption {
+	font-size: 12px;
+	line-height: 14px;
+	font-family: Helvetica;
+}
+
+
+/* PROJECTS */
 
 .visual-tweets, a.visual-tweets {
 	background: rgb(253,238,47) !important;
@@ -446,14 +458,8 @@ a.library-item:hover,
 	padding-top: 24px;
 }
 
-/* THEME SWITCHERS */
 
-/*#house {
-	margin: 32px auto;
-	position: relative;
-	width: 640px;
-	height: 586px;
-}*/
+/* THEME SWITCHERS */
 
 .dots {
 	margin-bottom: 2em;
@@ -775,6 +781,10 @@ body.gutenblood .dots a {
 body.gutenblood .dots a:hover {
 	background: url('../images/bullet-red.svg') no-repeat;
 	background-size: 6px 6px;
+}
+
+body.gutenblood .perec-box {
+	border-color: red !important;
 }
 
 
