@@ -103,7 +103,7 @@ nav .current,
 /* HOME PAGE */
 
 #house {
-	background: #BEC6C9 url('../images/town.svg') no-repeat;
+	background: #BEC6C9 url('../images/town-outline.svg') no-repeat;
 	background-size: 100% auto;
 	top: 57px;
 	left: 0;
@@ -565,6 +565,11 @@ body.gran-turismo {
 
 body.gran-turismo .top-link a {
 	background: #ffffff;
+}
+
+body.gran-turismo #house {
+	background: #FFFFFF url('../images/town.svg') no-repeat;
+	background-size: 100% auto;
 }
 
 body.gran-turismo a.library-item:hover,
