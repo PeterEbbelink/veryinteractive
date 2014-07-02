@@ -44,8 +44,8 @@ $(document).ready(function() {
   if($.cookie('theme') == undefined) {
     console.log("It's undefined");
     $('body').removeClass($.cookie('theme'));
-    $('body').addClass('gutenblood');
-    $.cookie('theme', 'gutenblood',{ expires: 7, path: '/' });
+    $('body').addClass('gran-turismo');
+    $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
   }
 
   var colored_words = $('.text-itself p, .text-itself h2, .text-itself blockquote');
