@@ -31,10 +31,6 @@ ul, li {
 	margin: 0;
 }
 
-::selection {
-	background: #ffffff;
-	}
-
 /* BULLETED LISTS */
 
 ul.bullets { margin-top: 0; }
