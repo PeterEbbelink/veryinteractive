@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>P1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+<style>
+	body {
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 10px;
+		height:100%;
+		width:100%;
+	}
+	
+	p {
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	}
+	.mono {
+		font-family:Courier, monospace;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #aaa;
+	}
+	a:hover {
+		color: #000;
+	}
+	a:active {
+		color: #000;
+	}
+	a:visited {
+	}
+	
+	.hover_over {
+		margin:0px;
+		padding:0px;
+	}
+	.hover_over p {
+		line-height:10px;
+	}
+	
+	.level1 {
+	}
+	.level2 {
+	}
+	.level3 {
+	}
+	.level4 {
+	}
+	.level5 {
+	}
+	
+	hr {
+		width:65%;
+		color:#ddd;
+		background-color:#ddd;
+		height:1px;
+		border:none;
+	}
+	
+	#credit_link {
+		height:12px;
+		padding:0px 0 0px 0;
+		margin:15px 0px 15px 0px;
+		color: #aaa;
+		font-size:12px;
+		line-height:12px;
+	}
+
+	
+	#back_button {
+		bottom:0px;
+		height:40px;
+		padding:0px 0 0px 0;
+		color: #aaa;
+		font-size:14px;
+	}
+	
+	#credits {
+		position:absolute;
+		left: 75px;
+		top:25px;
+		background-color:#eee;
+		font-size:11px;
+		border:25px solid #eee;
+		border-radius:25px;
+		display:none;
+	}
+	
+	#sidebar_container {
+		position:absolute; 
+		display:block; 
+		overflow-y:hidden; 
+		height:100%; 
+		width:45px;
+		margin:0 0 0 0;
+		padding:0 0 0 0; 
+		background-color:#eee;
+		border-right:1px solid #ccc;
+		opacity:0.25;
+	}
+	
+	#display_window {
+		width:100%;
+		height:100%;
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+		position:absolute;
+		top:0px;
+		left:46px;
+		border:0px transparent;
+	}
+	
+	#dark_filter {
+		width:100%;
+		height:100%;
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+		position:absolute;
+		top:0px;
+		left:46px;
+		background-color: #000;
+		opacity:0.5;
+		border:0px transparent;
+		display:none;
+	}
+	
+	#pw_container {
+		width:300px;
+		height:300px;
+		background-color:#fff;
+		border: solid #eee 30px;
+		border-radius:30px;
+		position:absolute; 
+		top:100px; 
+		left:85px; 
+		display:none;
+	}
+	
+	#preview_window {
+		width:600px; 
+		height:600px;
+		-moz-transform: scale(0.5, 0.5); 
+		-webkit-transform: scale(0.5, 0.5); 
+		-o-transform: scale(0.5, 0.5);
+		-ms-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5); 
+		-moz-transform-origin: top left;
+		-webkit-transform-origin: top left;
+		-o-transform-origin: top left;
+		-ms-transform-origin: top left;
+		transform-origin: top left;
+		border:1px solid #ccc;
+		overflow:hidden;
+	}
+	
+	#pointer {
+		position:absolute; 
+		margin:0px;
+		padding:0px;
+		left:50px; 
+		font-family:sans-serif; 
+		font-size:50px; 
+		color:#eee; 
+		display:none;
+	}
+	
+	#navigator {
+		position:fixed;
+		right: 75px;
+		top:25px;
+		background-color:#eee;
+		font-size:14px;
+		border:7px solid #eee;
+		border-radius:7px;
+		opacity:0.25;
+	}
+	
+	#sub_nav {
+		position:fixed;
+		right: 25px;
+		top:25px;
+		background-color:#eee;
+		font-size:14px;
+		border:7px solid #eee;
+		border-radius:7px;
+		opacity:0.25;
+	}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+
+<script>
+	$(document).ready(function() {
+		var curProj = 1;
+		
+		var bWidth = $(window).width() - 46;
+		$("#display_window").css("width", bWidth);
+		$("#dark_filter").css("width", bWidth);
+		
+		var hHeight = ($(window).height() - 100) / 31;
+		$(".resizable").css("height", hHeight);
+	
+		$(window).resize(function() {
+			var newWidth = $(window).width() - 46;
+			var newHeight = $(window).height();
+			hHeight = ($(window).height() - 100) / 31;
+			$(".resizable").css("height", hHeight);
+			$("#display_window").css("width", newWidth);
+			$("#display_window").css("height", newHeight);
+			$("#dark_filter").css("width", newWidth);
+			$("#dark_filter").css("height", newHeight);
+		});
+		
+		$("#credit_link").mouseenter(function() {
+			$("#credits").fadeIn();
+			$("#pw_container").hide();
+			$("#pointer").hide();
+		});
+		$("#credit_link").mouseleave(function() {
+			$("#credits").fadeOut();
+		});
+		
+		$("div.hover_over").mouseenter(function() {
+			var linkRef = $("a", this).attr("href");
+			var bHeight = $(document).height()-100;
+			var position = $(this).offset();	
+			$("#preview_window").attr("src", linkRef);
+			$("#pw_container").css("top", position.top-(position.top/bHeight)*300);
+			$("#pw_container").show();
+			$("#pointer").css("top", position.top-21);
+			$("#pointer").show();
+			$("#dark_filter").fadeIn();
+			$("#sidebar_container").fadeTo('fast', 1.0);
+		});
+		$("div.hover_over").mouseleave(function() {
+			$("#pw_container").hide();
+			$("#pointer").hide();
+		});
+		$("div.hover_over a").click(function() {
+			var linkRef = $(this).attr("href");
+			var temp = linkRef.split(".");
+			curProj = temp[0].slice(9);
+			$("#display_window").attr("src", linkRef);
+			$("#cur_proj_disp").html("&nbsp;&nbsp;"+curProj+"&nbsp;&nbsp;");
+			$("#new_window").attr("href", linkRef);
+			$("#pw_container").hide();
+			$("#pointer").hide();
+			$("#dark_filter").fadeOut();
+			$("#sidebar_container").fadeTo('fast', 0.25);
+			return false;
+		});
+		$("#sidebar_container").mouseenter(function() {
+			$("#dark_filter").fadeIn();
+			$("#sidebar_container").fadeTo('fast', 1.0);
+		});
+		$("#sidebar_container").mouseleave(function() {
+			$("#dark_filter").fadeOut();
+			$("#sidebar_container").fadeTo('fast', 0.25);			
+		});
+		
+		$("#navigator").mouseenter(function() {
+			$(this).fadeTo('fast', 1.0);
+		});
+		$("#navigator").mouseleave(function() {
+			$(this).fadeTo('fast', 0.25);			
+		});
+		
+		$("#prev").click(function() {
+			if(curProj == 1) {
+				curProj = 25;
+			} else {
+				curProj--;
+			}
+			var newSrc = "variation"+curProj+".html";
+			$("#display_window").attr("src", newSrc);
+			$("#cur_proj_disp").html("&nbsp;&nbsp;"+curProj+"&nbsp;&nbsp;");
+			$("#new_window").attr("href", newSrc);
+		});
+		$("#next").click(function() {
+			if(curProj == 25) {
+				curProj = 1;
+			} else {
+				curProj++;
+			}
+			var newSrc = "variation"+curProj+".html";
+			$("#display_window").attr("src", newSrc);
+			$("#cur_proj_disp").html("&nbsp;&nbsp;"+curProj+"&nbsp;&nbsp;");
+			$("#new_window").attr("href", newSrc);
+		});
+		
+		$("#cur_proj_disp").hover(
+			function() {
+				$(this).html("rand");
+			},
+			function() {
+				$(this).html("&nbsp;&nbsp;"+curProj+"&nbsp;&nbsp;");
+			}
+		);
+		$("#cur_proj_disp").click(function() {
+			curProj = Math.floor((Math.random()*25)+1);
+			var newSrc = "variation"+curProj+".html";
+			$("#display_window").attr("src", newSrc);
+			$("#cur_proj_disp").html("&nbsp;&nbsp;"+curProj+"&nbsp;&nbsp;");
+			$("#new_window").attr("href", newSrc);
+		});
+		
+		$("#sub_nav").mouseenter(function() {
+			$(this).fadeTo('fast', 1.0);
+		});
+		$("#sub_nav").mouseleave(function() {
+			$(this).fadeTo('fast', 0.25);			
+		});
+	});
+</script>
+</head>
+
+<body>
+<iframe id="display_window" src="variation1.html"></iframe>
+<div id="navigator"><div style="float:left;"><a href="#" id="prev">&larr;</a></div><div style="width:30px; float:left;"><p align="center"><a href="#" id="cur_proj_disp" style="font-size:11px; color:#aaa;">1</a></p></div><div style="float:left;"><a href="#" id="next">&rarr;</a></div></div>
+<div id="sub_nav"><a href="variation1.html" target="_blank" id="new_window">&nbsp;+&nbsp;</a></div>
+<div id="dark_filter"></p></div>
+<div id="sidebar_container">
+	<div id="credit_link"><p align="center">?</p></div>
+	<div class="resizable"><hr></div>
+	<div class="hover_over resizable level1"><p align="center"><a href="variation1.html">01</a></p></div>
+	<div class="hover_over resizable level1"><p align="center"><a href="variation2.html">02</a></p></div>
+	<div class="hover_over resizable level1"><p align="center"><a href="variation3.html">03</a></p></div>
+	<div class="hover_over resizable level1"><p align="center"><a href="variation4.html">04</a></p></div>
+	<div class="hover_over resizable level1"><p align="center"><a href="variation5.html">05</a></p></div>
+	<div class="resizable"><hr></div>
+	<div class="hover_over resizable level2"><p align="center"><a href="variation6.html">06</a></p></div>
+	<div class="hover_over resizable level2"><p align="center"><a href="variation7.html">07</a></p></div>
+	<div class="hover_over resizable level2"><p align="center"><a href="variation8.html">08</a></p></div>
+	<div class="hover_over resizable level2"><p align="center"><a href="variation9.html">09</a></p></div>
+	<div class="hover_over resizable level2"><p align="center"><a href="variation10.html">10</a></p></div>
+	<div class="resizable"><hr></div>
+	<div class="hover_over resizable level3"><p align="center"><a href="variation11.html">11</a></p></div>
+	<div class="hover_over resizable level3"><p align="center"><a href="variation12.html">12</a></p></div>
+	<div class="hover_over resizable level3"><p align="center"><a href="variation13.html">13</a></p></div>
+	<div class="hover_over resizable level3"><p align="center"><a href="variation14.html">14</a></p></div>
+	<div class="hover_over resizable level3"><p align="center"><a href="variation15.html">15</a></p></div>
+	<div class="resizable"><hr></div>
+	<div class="hover_over resizable level4"><p align="center"><a href="variation16.html">16</a></p></div>
+	<div class="hover_over resizable level4"><p align="center"><a href="variation17.html">17</a></p></div>
+	<div class="hover_over resizable level4"><p align="center"><a href="variation18.html">18</a></p></div>
+	<div class="hover_over resizable level4"><p align="center"><a href="variation19.html">19</a></p></div>
+	<div class="hover_over resizable level4"><p align="center"><a href="variation20.html">20</a></p></div>
+	<div class="resizable"><hr></div>
+	<div class="hover_over resizable level5"><p align="center"><a href="variation21.html">21</a></p></div>
+	<div class="hover_over resizable level5"><p align="center"><a href="variation22.html">22</a></p></div>
+	<div class="hover_over resizable level5"><p align="center"><a href="variation23.html">23</a></p></div>
+	<div class="hover_over resizable level5"><p align="center"><a href="variation24.html">24</a></p></div>
+	<div class="hover_over resizable level5"><p align="center"><a href="variation25.html">25</a></p></div>
+	<div class="resizable"><hr></div>
+	<div id="back_button"><p align="center"><a href="http://art.yale.edu/~timothyripper/interactive/">&larr;</a></p></div>
+</div>
+<div id="pw_container">
+	<iframe id="preview_window" src="variation1.html" scrolling="no"></iframe>
+</div>
+<div id="pointer">◀</div>
+<div id="credits"><p><b>P1: 25 Variations</b><br><br>A project using HTML and CSS<br>to explore concrete poetry.<br><br>Source: Snow Piece (from <i>Grapefruit</i>)<br>Yoko Ono, 1963<br><br><hr><br>Level 1 (1-5):<br><br>Using only <span class="mono">p</span>, <span class="mono">br</span>, and <span class="mono">&amp;nbsp;</span> to modify the text.<span class="mono"></span><br><br><hr><br>Level 2 (6-10):<br><br>Using only the elements allowed in Level 1, along <br>with <span class="mono">div</span>, <span class="mono">span</span>, <span class="mono">h1-h6</span>, <span class="mono">&lt;strong&gt;</span>, <span class="mono">&lt;em&gt;</span>, <span class="mono">ol</span> <br>and <span class="mono">ul</span> lists, and in-page <span class="mono">a</span> links.<br><br><hr><br>Level 3 (11-15):<br><br>Using only the HTML elements from Levels 1 and 2, <br>along with the CSS properties <span class="mono">padding</span>, <span class="mono">margin</span>, <br><span class="mono">position</span>, <span class="mono">float</span>, <span class="mono">top</span>, <span class="mono">right</span>, <span class="mono">bottom</span>, <span class="mono">left</span>, <br><span class="mono">height</span>, and <span class="mono">width</span>.<br><br><hr><br>Level 4 (16-20):<br><br>Using only the allowed properties from the previous <br>levels, along with <span class="mono">font-style</span>, <span class="mono">font-weight</span>, <br><span class="mono">font-size</span>, <span class="mono">font-family</span>, <span class="mono">text-align</span>, <br><span class="mono">line-height</span>, <span class="mono">letter-spacing</span>, and <br><span class="mono">text-transform</span>.<br><br><hr><br>Level 5 (21-25):<br><br>Using all valid HTML and CSS.</p></div>
+</body>
+</html>
