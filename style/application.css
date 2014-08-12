@@ -820,8 +820,13 @@ body.august #house {
 }
 
 body.august,
-body.august nav a,
-body.august .document.text {
+body.august .document.text,
+body.august nav a {
+	background: rgb(252, 253, 248) !important;
+	color: rgb(117, 48, 252);
+}
+
+body.august nav {
 	background: rgb(252, 253, 248) url('../images/bg-august.png') repeat !important;
 	color: rgb(117, 48, 252);
 }
@@ -876,6 +881,10 @@ body.august a.library-item,
 body.august .top-link a {
 	background: rgb(252, 253, 248);
 	color: rgb(117, 48, 252);
+}
+
+body.august .top-link a {
+	background: rgb(252, 253, 248) url('../images/bg-august.png') repeat !important;
 }
 
 body.august a.library-item:hover,
