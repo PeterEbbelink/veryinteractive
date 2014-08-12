@@ -807,6 +807,149 @@ body.gutenblood .perec-box {
 	border-color: red !important;
 }
 
+/* AUGUST THEME */
+
+body.august {
+	background: rgb(252, 253, 248) !important;
+	color: rgb(117, 48, 252);
+}
+
+body.august #house {
+	background: rgb(252, 253, 248) url('../images/town-august.svg') no-repeat;
+	background-size: 100% auto;
+}
+
+body.august,
+body.august nav a,
+body.august .document.text {
+	background: rgb(252, 253, 248) url('../images/bg-august.png') repeat !important;
+	color: rgb(117, 48, 252);
+}
+
+body.august .document a {
+	color: rgb(117, 48, 252);
+}
+
+body.august .document a:hover {
+	color: rgb(252, 253, 248);
+	background: rgb(117, 48, 252);
+}
+
+body.august #greeting,
+body.august .document.text,
+body.august .document.text h2,
+body.august .document.text .centered h1 {
+	font-family: cursive !important;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: normal;
+}
+
+body.august .document.text .caption,
+body.august .document.text .notes,
+body.august .document.text blockquote {
+	font-family: cursive !important;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+body.august .document a {
+	color: rgb(117, 48, 252);
+	background: url('../images/moving-underline-august.gif') repeat-x;
+	background-position: 0 100%;
+}
+
+body.august .document a:hover {
+	background:rgb(117, 48, 252) url('../images/moving-underline-august.gif') repeat-x;
+	color: rgb(252, 253, 248);
+	background-position: 0 100%;
+}
+
+body.august nav,
+body.august .library-row,
+body.august .top-link a {
+	border-color: rgb(117, 48, 252);
+}
+
+body.august a.library-item,
+body.august .top-link a {
+	background: rgb(252, 253, 248) url('../images/bg-august.png') repeat;
+	color: rgb(117, 48, 252);
+}
+
+body.august a.library-item:hover,
+body.august .top-link a:hover {
+	background: rgb(117, 48, 252);
+	color: rgb(252, 253, 248);
+}
+
+@-webkit-keyframes august_pulse {
+    0% { background: rgb(115, 46, 250); color: rgb(252, 253, 248); }
+    100% { background: rgb(117, 48, 252); color: rgb(252, 253, 248); }
+    /*51% { background: rgb(252, 253, 248); color: rgb(117, 48, 252); }
+    100% { background: rgb(252, 253, 248); color: rgb(117, 48, 252); }*/
+}
+
+body.august a.library-item:hover,
+body.august .top-link a:hover {
+	-webkit-animation: august_pulse 0.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+body.august.visual-tweets,
+body.august.twenty-five-variations,
+body.august.website-for-a-future-event,
+body.august.weather {
+	color: rgb(117, 48, 252);
+	background: rgb(252, 253, 248) !important;
+}
+
+body.august a.visual-tweets,
+body.august a.twenty-five-variations,
+body.august a.website-for-a-future-event,
+body.august a.weather {
+	background: rgb(117, 48, 252) !important;
+	border-color: rgb(117, 48, 252) !important;
+	color: rgb(252, 253, 248);
+}
+
+body.august nav .home-link {
+	background: url('../images/home-august.svg') no-repeat;
+}
+
+
+body.august nav .info-link {
+	background: url('../images/info-august.svg') no-repeat;
+}
+
+body.august nav li.current,
+body.august nav li.current:hover {
+	background: url('../images/bullet-august.svg') no-repeat;
+	background-size: 6px 6px;
+	background-position:center 20%;
+}
+
+body.august nav li:hover {
+	background: url('../images/bullet-empty-august.svg') no-repeat;
+	background-size: 6px 6px;
+	background-position:center 24%;
+}
+
+body.august .dots a {
+	background: url('../images/bullet-empty-august.svg') no-repeat;
+	background-size: 6px 6px;
+	margin-left: -4px;
+}
+
+body.august .dots a:hover {
+	background: url('../images/bullet-august.svg') no-repeat;
+	background-size: 6px 6px;
+}
+
+body.august .perec-box {
+	border-color: red !important;
+}
 
 /* MEDIA QUERIES */
 
