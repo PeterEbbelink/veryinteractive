@@ -874,7 +874,7 @@ body.august .top-link a {
 
 body.august a.library-item,
 body.august .top-link a {
-	background: rgb(252, 253, 248) url('../images/bg-august.png') repeat;
+	background: rgb(252, 253, 248);
 	color: rgb(117, 48, 252);
 }
 
