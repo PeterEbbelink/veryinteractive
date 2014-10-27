@@ -58,6 +58,15 @@ $(document).ready(function() {
     $('body').addClass($.cookie('theme'));  //set the body to the cookie theme
   }
 
+  // Special November Stuff
+
+  // $('body.november .document.text p').each(function(){
+  //   var myStr = $(this).html();
+  //   myStr = myStr.split("");
+  //   // alert(myStr);
+  //   // $(this).html(myContents);
+  // });
+
   $('.dots a').each(function(index) {
     $(this).click(function(e) {
       e.preventDefault();
