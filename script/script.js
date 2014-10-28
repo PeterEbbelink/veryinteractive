@@ -44,15 +44,15 @@ $(document).ready(function() {
   if($.cookie('theme') == undefined) {
     console.log("It's undefined");
     $('body').removeClass($.cookie('theme'));
-    $('body').addClass('gran-turismo');
-    $.cookie('theme', 'gran-turismo',{ expires: 7, path: '/' });
+    $('body').addClass('november');
+    $.cookie('theme', 'november',{ expires: 7, path: '/' });
   }
 
-  var colored_words = $('.text-itself p, .text-itself h2, .text-itself blockquote');
+  // var colored_words = $('.text-itself p, .text-itself h2, .text-itself blockquote');
 
-  if($.cookie('theme') == 'gran-turismo' && $('.text-itself').length){
-    $(colored_words).lettering('words');
-  }
+  // if($.cookie('theme') == 'gran-turismo' && $('.text-itself').length){
+  //   $(colored_words).lettering('words');
+  // }
 
   if($.cookie('theme')!='') {
     $('body').addClass($.cookie('theme'));  //set the body to the cookie theme
