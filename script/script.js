@@ -44,8 +44,8 @@ $(document).ready(function() {
   if($.cookie('theme') == undefined) {
     console.log("It's undefined");
     $('body').removeClass($.cookie('theme'));
-    $('body').addClass('august');
-    $.cookie('theme', 'august',{ expires: 7, path: '/' });
+    $('body').addClass('november');
+    $.cookie('theme', 'november',{ expires: 7, path: '/' });
   }
 
   // var colored_words = $('.text-itself p, .text-itself h2, .text-itself blockquote');
@@ -66,6 +66,28 @@ $(document).ready(function() {
   //   // alert(myStr);
   //   // $(this).html(myContents);
   // });
+  
+  function blueblock( str ){
+        return "<img src='../../../images/block-blue.svg'>";
+  };
+
+  function redblock( str ){
+        return " <img src='../../../images/block-red.svg'> ";
+  };
+
+  function greenblock( str ){
+        return " <img src='../../../images/block-green.svg'> ";
+  };
+
+
+  function yellowblock( str ){
+        return " <img src='../../../images/block-yellow.svg'> ";
+  };
+
+  $("body.november *").replaceText( /this|that|those/gi, blueblock );
+  $("body.november *").replaceText( /( |^)design[^A-Za-z0-9]|( |^)designer[^A-Za-z0-9]/gi, redblock );
+  $("body.november *").replaceText( /( |^)art[^A-Za-z0-9]|( |^)artist[^A-Za-z0-9]/gi, greenblock );
+  $("body.november *").replaceText( /( |^)new[^A-Za-z0-9]/gi, yellowblock );
 
   $('.dots a').each(function(index) {
     $(this).click(function(e) {

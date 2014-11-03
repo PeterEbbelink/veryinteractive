@@ -4,10 +4,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1200px" height="806.537px" viewBox="0 0 1200 806.537" enable-background="new 0 0 1200 806.537" xml:space="preserve">
 <rect y="-1.2" fill="#1194F4" width="1200" height="233.363"/>
-<rect y="232.163" fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="1200" height="573.199"/>
-<polygon fill="#FDEE2F" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="424.9,400.164 0,400.164 0,470.163 
-	351.5,470.163 0,805.362 601,805.362 1202,805.362 1086.6,695.263 1200,695.263 1200,501.163 883,501.163 760.9,384.664 
-	1200,384.664 1200,347.164 721.5,347.164 601,232.163 "/>
+<polyline fill="#FDEE2F" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="1200,347.164 721.5,347.164 
+	601,232.163 424.9,400.164 45.897,400.164 45.897,470.163 351.5,470.163 0,806.537 601,805.362 1200,806.537 1086.6,695.263 
+	1200,695.263 "/>
+<polyline fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="1200,501.163 883,501.163 
+	760.9,384.664 1200,384.664 "/>
 <rect x="1015.5" y="224.263" fill="#634E2F" width="30.8" height="107.9"/>
 <polygon fill="#5F8E0C" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="680,235.163 779.2,140.063 
 	878.5,272.163 "/>
@@ -17,10 +18,10 @@
 <g>
 	<path fill="#FFFFFF" d="M599,232.163"/>
 </g>
-<polygon fill="#1194F4" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="0,195.263 0,407.263 279.9,310.164 
-	60,108.163 "/>
-<polygon fill="#FDEE2F" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="0,366.263 0,636.163 110,636.163 
-	110,366.164 "/>
+<polyline fill="#1194F4" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="0,407.263 279.9,310.164 60,108.163 
+	0,195.263 "/>
+<polyline fill="#FDEE2F" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="0,636.163 110,636.163 110,366.164 
+	0,366.263 "/>
 <polygon fill="#FDEE2F" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="812,254.763 961,96.163 1110,294.164 
 	940,444.163 "/>
 <rect x="899" y="294.164" fill="#1194F4" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="211" height="186"/>
@@ -29,7 +30,7 @@
 <rect x="367" y="204.163" fill="#FDEE2F" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="48" height="168"/>
 <g>
 	<path fill="#5F8E0C" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M391,272.138c55.781,0,101-45.22,101-101
-		s-45.219-101-101-101s-101,45.22-101,101c0,55.825,45.2,101.025,101,101.025"/>
+		c0-55.78-45.219-101-101-101s-101,45.22-101,101c0,55.825,45.2,101.025,101,101.025"/>
 </g>
 <polygon fill="#F72C39" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" points="279.9,496.163 110,636.163 
 	109.9,366.164 279.9,310.164 "/>
