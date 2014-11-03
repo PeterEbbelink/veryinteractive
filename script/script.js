@@ -68,25 +68,25 @@ $(document).ready(function() {
   // });
   
   function blueblock( str ){
-        return "<img src='../../../images/block-blue.svg'>";
+        return "<img src='../../../images/block-blue.svg' class='block'>";
   };
 
   function redblock( str ){
-        return " <img src='../../../images/block-red.svg'> ";
+        return " <div class='block'><img src='../../../images/block-red.svg'></div> ";
   };
 
   function greenblock( str ){
-        return " <img src='../../../images/block-green.svg'> ";
+        return " <img src='../../../images/block-green.svg' class='block'>> ";
   };
 
 
   function yellowblock( str ){
-        return " <img src='../../../images/block-yellow.svg'> ";
+        return " <img src='../../../images/block-yellow.svg' class='block'> ";
   };
 
   $("body.november *").replaceText( /this|that|those/gi, blueblock );
-  $("body.november *").replaceText( /( |^)design[^A-Za-z0-9]|( |^)designer[^A-Za-z0-9]/gi, redblock );
-  $("body.november *").replaceText( /( |^)art[^A-Za-z0-9]|( |^)artist[^A-Za-z0-9]/gi, greenblock );
+  $("body.november *").replaceText( /( |^)design[^A-Za-z0-9]|( |^)designer[^A-Za-z0-9]/gi, greenblock );
+  $("body.november *").replaceText( /( |^)art[^A-Za-z0-9]|( |^)artist[^A-Za-z0-9]/gi, redblock );
   $("body.november *").replaceText( /( |^)new[^A-Za-z0-9]/gi, yellowblock );
 
   $('.dots a').each(function(index) {

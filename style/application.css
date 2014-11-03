@@ -1128,4 +1128,29 @@ body.november .document a:hover {
 		top: 150px;
 	}
 
+	body.november nav {
+		padding: 0;
+	}
+
+	body.november nav li.current {
+		height: 37px;
+	}
+
+	body.november #house {
+		margin-top: -1px;
+	}
+
+	body.november #greeting,
+	body.november .document.text,
+	body.november .document.text h2,
+	body.november .document.text .centered h1 {
+		font-size: 30px;
+		line-height: 34px;
+	}
+
+	body.november img.block {
+		height: 30px;
+		width: 30px;
+	}
+
 }
