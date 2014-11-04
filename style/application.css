@@ -1109,6 +1109,7 @@ body.november .document a:hover {
 		background-size: 6px 6px;
 		background-position: 96% !important;
 		cursor: pointer;
+		margin-top: 2px;
 	}
 
 	nav .info-link {
@@ -1128,14 +1129,6 @@ body.november .document a:hover {
 		top: 150px;
 	}
 
-	body.november nav {
-		padding: 0;
-	}
-
-	body.november nav li.current {
-		height: 37px;
-	}
-
 	body.november #house {
 		margin-top: -1px;
 	}
@@ -1147,6 +1140,26 @@ body.november .document a:hover {
 		font-size: 30px;
 		line-height: 34px;
 	}
+
+	body.november code,
+	body.november nav a,
+	body.november nav .current,
+	body.november .library-row h2,
+	body.november .accordion-year,
+	body.november .class-abbreviation,
+	body.november .motto,
+	body.november .document .side,
+	body.november .document .side h1,
+	body.november .metadata,
+	body.november .document.text .metadata,
+	body.november .document.text .metadata h1,
+	body.november .document .metadata h1,
+	body.november .back-to-top {
+		font-family: 'Inconsolata', courier new, courier !important;
+		font-size: 17px !important;
+		text-transform: uppercase !important;
+		line-height: 1.2 !important;
+	}*/
 
 	body.november img.block {
 		height: 30px;
