@@ -76,7 +76,7 @@ $(document).ready(function() {
   };
 
   function greenblock( str ){
-        return " <img src='../../../images/block-green.svg' class='block'>> ";
+        return " <img src='../../../images/block-green.svg' class='block'> ";
   };
 
 
