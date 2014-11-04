@@ -72,7 +72,7 @@ $(document).ready(function() {
   };
 
   function redblock( str ){
-        return " <div class='block'><img src='../../../images/block-red.svg'></div> ";
+        return " <img src='../../../images/block-red.svg' class='block'> ";
   };
 
   function greenblock( str ){
