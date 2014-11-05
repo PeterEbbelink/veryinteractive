@@ -1,0 +1,117 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+div.main-column {
+	width: 640px;
+	margin: 0 auto;
+}
+div.text-column {
+	max-width: 640px;
+	margin: 100px auto;
+}
+	div.text-column p{
+		text-indent: 40px;
+	}
+img.main-image {
+	position: relative;
+	display: block;
+	margin: 30px auto;
+}
+header{
+	margin-top: 20px;
+	border-top: 1px dashed;
+	border-bottom: 1px dashed;
+	text-align: center;
+	transition-property: height;
+	background-color: white;
+}
+header.disappear:hover{
+	opacity: 0;
+}
+	header h1{
+		margin: 10px 0;
+	}
+footer {
+	border-bottom: 1px dashed;
+	border-top: 1px dashed;
+	text-align: center;
+	font-size: 11px;
+	position: absolute;
+	top: 360px;
+	width:640px;
+	z-index: -1;
+}
+	footer p{
+		margin: 17px 0 16px 0; 
+	}
+p {
+	margin: 0;
+}
+nav {
+	width: 100%;
+}
+	nav li {
+		display: inline;
+		margin: 0;
+	}
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	nav a {
+		text-decoration: none;
+		color: black;
+	}
+	nav div {
+		width: 319px;
+		float: left;
+		text-align: center;
+		border-bottom: 1px dashed;
+		padding: 5px 0;
+		border-right: 1px dashed;
+		background-color: white;
+		transition: 0s background-color;
+	}
+	nav div.var{
+		width: 127px;
+		z-index: 0;
+	}
+	nav div.nav-hide{
+		width:640px;
+		padding: 0;
+		border: none;
+		opacity: 0;
+	}
+	nav div.nav-hide:hover{
+		opacity: 1;
+	}
+	nav div.level {
+		position: absolute;
+		background-color: white;
+		width: 640px;	
+		padding: 5px 0;
+		border:none;
+		border-bottom: 1px dashed;
+		z-index: -1;
+	}
+	nav div.level.second {
+		top: 451px;
+	}
+	nav div.level.third {
+		top: 481px;
+	}
+	nav div.level.fourth {
+		top: 511px;
+	}
+	nav div.level.fifth {
+		top: 541px;
+	}
+	nav div.var:hover, div.yellow:hover{
+		transition-duration: 0.5s;
+		background-color: yellow;
+
+	}
+	
+	div.right-most {
+		border-right: none;
+	}

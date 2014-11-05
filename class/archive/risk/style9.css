@@ -1,0 +1,82 @@
+body {color:white;}
+h1 {color:#00ff00;}
+h2 {color:rgb(255,0,0);}
+	h3 {color:#00ff00;}
+h5{color:rgb(22,79,79);}h1 {color:#00ff00;}
+h4 {color:rgb(255,0,0);}
+h6 {color:rgb(25,77,14);}
+
+
+h17
+{
+background-color:#00000;
+font-family: courier;
+
+
+font-size:15px;
+line-height:30px;
+letter-spacing:2px
+}
+h1
+{
+background-color:;
+font-family: courier;
+font-size: 20px;
+
+
+}
+
+h6
+{
+font-family: courier;
+font-size: 20px;
+text-transform:;
+line-height:20px;
+letter-spacing:200px
+}
+h2
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 400px;
+text-transform:uppercase;
+line-height:20px;
+}
+
+h3
+{background-color:#FAEBD7;
+font-family: Monaco;
+font-size: 42px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:100px
+}
+
+h4
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 30px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:50px
+
+} 
+
+h5
+{background-color:#FFFFFF;
+font-family: times;
+font-size: 20px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:10px
+}
+p
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 12px;
+}
+  
+  
+    p { line-height: 200%; }
+    
+    

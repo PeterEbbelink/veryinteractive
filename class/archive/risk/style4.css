@@ -1,0 +1,51 @@
+
+	
+h7
+{
+background-color:#FFFFFF;
+font-family: times;
+
+font-size:20px;
+line-height:500px;
+letter-spacing:200px
+}
+h1
+{
+background-color:#FFFFFF;
+font-family: georgia;
+font-size: 500px;
+
+
+}
+h2
+{background-color:#FFFFFF;
+font-family: times;
+font-size: 14px;
+text-transform:uppercase;
+line-height:20px;
+}
+
+h3
+{background-color:#FFFFFF;
+font-family: Monaco;
+font-size: 42px;
+text-transform:uppercase;
+}
+
+h4
+{background-color:#FFFFFF;
+font-family: courier;
+font-size: 22px;
+
+} 
+p
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 12px;
+}
+  
+  
+    p { line-height: 200%; }
+    
+    

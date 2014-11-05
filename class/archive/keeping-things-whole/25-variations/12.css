@@ -1,0 +1,89 @@
+div {
+	width: 100%;
+	height:900px;
+	position:relative;
+}
+body{
+	margin:0;
+}
+h1 {
+	position: absolute;
+	left: 200px;
+	top: 180px;
+	display: inline;
+	margin: 0;
+	padding: 0 auto;
+
+}
+p {
+	position: absolute;
+	margin: 0;
+}
+p.a {
+	left: 200px;
+	top: 220px;
+}
+p.b {
+	left: 200px;
+	top: 240px;
+}
+p.c {
+	left: 200px;
+	top: 260px;
+}
+p.d {
+	left: 200px;
+	top: 280px;
+}
+p.e {
+	left: 200px;
+	top: 300px;
+}
+p.f {
+	left: 200px;
+	top: 320px;
+}
+p.g {
+	left: 200px;
+	top: 340px;
+}
+p.h {
+	left: 200px;
+	top: 360px;
+}
+p.i {
+	left: 200px;
+	top: 380px;
+}
+p.j {
+	left: 200px;
+	top: 400px;
+}
+p.k {
+	left: 200px;
+	top: 420px;
+}
+p.l {
+	left: 200px;
+	top: 440px;
+}
+p.m {
+	left: 200px;
+	top: 460px;
+}
+p.n {
+	left: 200px;
+	top: 480px;
+}
+p.o {
+	left: 200px;
+	top: 500px;
+}
+p.p {
+	left: 200px;
+	top: 520px;
+}
+p.q {
+	left: 200px;
+	top: 540px;
+}

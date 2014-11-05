@@ -1,0 +1,80 @@
+  
+body {color:blue;}
+h1 {color:#00ff00;}
+h2 {color:rgb(255,0,0);}
+h3 {color:#00ff00;}
+h5{color:rgb(22,79,79);}h1 {color:#00ff00;}
+h4 {color:rgb(255,0,0);}
+h6 {color:rgb(25,77,14);}
+
+h9
+{
+background-color:#00000;
+font-family: helvetica;
+font-size:100px;
+line-height:90px;
+letter-spacing:200px
+}
+h1
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 500px;
+
+
+}
+
+h6
+{
+font-family: helvetica;
+font-size: 100px;
+text-transform:uppercase;
+line-height:20px;
+letter-spacing:5px
+}
+h2
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 400px;
+text-transform:uppercase;
+line-height:20px;
+}
+
+h3
+{background-color:#FFFFFF;
+font-family: Monaco;
+font-size: 42px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:100px
+}
+
+h4
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 30px;
+text-transform:uppercase;
+
+} 
+
+h5
+{background-color:#FFFFFF;
+font-family: times;
+font-size: 20px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:10px
+}
+p
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 12px;
+}
+  
+  
+    p { line-height: 200%; }
+    
+
+
+    

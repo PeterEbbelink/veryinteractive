@@ -1,0 +1,53 @@
+
+	
+body1
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+
+font-size:200px;
+line-height:90px;
+letter-spacing:50px
+}
+h1
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 500px;
+
+
+}
+h2
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 400px;
+text-transform:uppercase;
+line-height:20px;
+}
+
+h3
+{background-color:#FFFFFF;
+font-family: Monaco;
+font-size: 12px;
+text-transform:uppercase;
+
+}
+
+h4
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 220px;
+text-transform:uppercase;
+
+} 
+p
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 12px;
+}
+  
+  
+    p { line-height: 200%; }
+    
+    

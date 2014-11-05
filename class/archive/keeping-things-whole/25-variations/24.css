@@ -1,0 +1,11 @@
+p {
+	margin-top: 100px;
+	text-align: center;
+	font-family: 'Molengo', sans-serif;
+	font-size: 30px;
+	line-height: 0px;
+	transition: line-height 0.8s;
+}
+p:hover {
+	line-height: 43px;
+}

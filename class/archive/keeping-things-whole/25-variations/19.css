@@ -1,0 +1,10 @@
+body {
+	font-family: courier;
+	font-size: 12px;
+}
+
+p {
+	margin: 150px auto;
+	display: block;
+	text-align: center;
+}

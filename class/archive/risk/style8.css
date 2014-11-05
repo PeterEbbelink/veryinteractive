@@ -1,0 +1,98 @@
+body {color:red;}
+h1 {color:black;}
+h2 {color:rgb(255,0,0);}
+	h3 {color:#00ff00;}
+h5{color:rgb(22,79,79);}h1 {color:black;}
+h4 {color:rgb(255,0,0);}
+h6 {color:#FF66CC;}
+
+
+body1
+{
+background-color:#00000;
+font-family: times;
+font-size:10px;
+line-height:30px;
+letter-spacing:2px
+}
+h1
+{
+font-family: times;
+font-size: 20px;
+
+}
+
+h6
+{
+font-family: courier;
+font-size: 20px;
+text-transform:;
+line-height:20px;
+letter-spacing:200px
+}
+h2
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 40px;
+text-transform:uppercase;
+line-height:20px;
+}
+
+h3
+{background-color:#FAEBD7;
+font-family: Monaco;
+font-size: 42px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:100px
+}
+
+h4
+{background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 10px;
+
+line-height:41px;
+letter-spacing:1px
+
+} 
+
+h5
+{background-color:#FFFFFF;
+font-family: times;
+font-size: 20px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:10px
+}
+p
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 12px;
+}
+
+h6
+{background-color:#00000;
+font-family: times;
+font-size: 17px;
+text-transform:uppercase;
+line-height:41px;
+letter-spacing:30px
+}
+p
+{
+background-color:#FFFFFF;
+font-family: helvetica;
+font-size: 12px;
+}
+  
+  
+    p { line-height: 200%; }
+    
+    a:link {color:black;text-decoration:none;}      
+a:visited {color:black;text-decoration:none;} 
+a:hover {color:#FFFF99;text-decoration:none;}  
+a:active {color:#FFFF99;text-decoration:none;background-color:#FFFF99;}
+
+  

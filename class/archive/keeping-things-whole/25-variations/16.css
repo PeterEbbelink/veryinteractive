@@ -1,0 +1,13 @@
+body {
+	font-family: "Courier New";
+	font-size: 25px;
+
+}
+div {
+	width: 100%;
+	height:900px;
+	position:relative;
+}
+body{
+	margin:0;
+}

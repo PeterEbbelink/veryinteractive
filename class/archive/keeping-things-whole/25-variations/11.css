@@ -1,0 +1,14 @@
+
+div {
+	float:left;
+	width: 3px;
+}
+p {
+	margin: 0 auto;
+}
+p.right {
+	float: right;
+}
+div.box {
+	width:608px;
+}

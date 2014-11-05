@@ -1,0 +1,14 @@
+p {
+
+	margin-top: 100px;
+	font-family: arial;
+	letter-spacing: -10px;
+	transition: all 5s ease-out;
+}
+p:hover {
+	letter-spacing: 15px;
+}
+div{ 
+	margin-left: 300px;
+	border-left: solid;
+}

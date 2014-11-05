@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Great Figure, William Carlos Williams (1916)</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<style type="text/css">
+			body {
+				margin: 0px;
+				overflow: hidden;
+			}
+			#navbar {
+				position: absolute;
+				margin-top: -20px;
+				height: 40px;
+				width: 100%;
+				background: #1d246d;
+				-webkit-transition: margin-top 0.2s;
+				color: #fff;
+				font-family: Helvetica;
+				font-size: 57px;
+				line-height: 40px;
+				font-weight: bold;
+				z-index: 2;
+				overflow: hidden;
+				box-shadow: 0px 3px 0px rgba(0,0,0,0.1);
+			}
+			#next {
+				float: right;
+				margin-right: -3px;
+				cursor: e-resize;
+				user-select: none;
+				z-index: 2;
+				user-select: none;
+			}
+			#previous {
+				float: left;
+				margin-left: -3px;
+				cursor: w-resize;
+				user-select: none;
+				z-index: 2;
+				user-select: none;
+			}
+			#navbar:hover {
+				margin-top: 0px;
+			}
+			#iframe {
+				position: absolute;
+				top: 20px;
+				width: 100%;
+				border: none;
+			}
+			#circle {
+				background: red;
+				position: absolute;
+				width: 70px;
+				height: 70px;
+				border-radius: 35px;
+				margin-top: -15px;
+				margin-left: -35px;
+				left: 0%;
+				z-index: -1;
+				cursor: alias;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="navbar">
+			<div onselectstart="return false;" unselectable="on" onmouseup="go(0);" id="previous"></div>
+			<div onselectstart="return false;" unselectable="on" onmouseup="go(1);" id="next"></div>
+			<div onmouseup="window.location.assign('../')" id="circle"></div>
+		</div>
+		<iframe id="iframe" src="poems/2.html"></iframe>
+	</body>
+	<script type="text/javascript">
+		var poem = Number(window.location.hash.replace("#", ""));
+		
+		$(window).resize(function() {
+			$("#iframe").height($(window).height()-20);
+		});
+		
+		$("#iframe").height($(window).height()-20);
+
+		$("#circle").css("left", (poem-0.5)*100/25+"%");
+		
+		$("#iframe").attr("src", "../poems/"+poem+".html#1");
+		window.document.title = "The Great Figure, William Carlos Williams (1916) / "+poem;
+		
+		if (poem == 1) {
+			$("#next").text("2");
+		} else if (poem == 25) {
+			$("#previous").text("24");
+		} else {
+			$("#next").text(poem+1);
+			$("#previous").text(poem-1);
+		}
+		
+		function go(direction) {
+			if (direction && poem != 25) {
+				poem++;
+				if (poem == 1) {
+					$("#next").text("2");
+					$("#previous").text("");
+				} else if (poem == 25) {
+					$("#next").text("");
+					$("#previous").text("24");
+				} else {
+					$("#next").text(poem+1);
+					$("#previous").text(poem-1);
+				}
+				window.location.hash = poem;
+				$("#iframe").attr("src", "../poems/"+poem+".html#1");
+				$("#circle").css("left", (poem-0.5)*100/25+"%");
+				window.document.title = "The Great Figure, William Carlos Williams (1916) / "+poem;
+			} else if (!direction && poem != 1) {
+				poem--;
+				if (poem == 1) {
+					$("#next").text("2");
+					$("#previous").text("");
+				} else if (poem == 25) {
+					$("#next").text("");
+					$("#previous").text("24");
+				} else {
+					$("#next").text(poem+1);
+					$("#previous").text(poem-1);
+				}
+				window.location.hash = poem;
+				$("#iframe").attr("src", "../poems/"+poem+".html#1");
+				$("#circle").css("left", (poem-0.5)*100/25+"%");
+				window.document.title = "The Great Figure, William Carlos Williams (1916) / "+poem;
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,18 @@
+body {
+	font-family: "trebuchet ms";
+}
+h1 {
+	font-size: 230px;
+	margin: 0 0 70px 30px;
+	line-height: 150%;
+}
+p {
+	margin: 0 30px;
+	font-size: 120px;
+	line-height: 330px;
+}
+.big {
+	font-size: 450px;
+	line-height: 0px;
+	letter-spacing: -30px;
+}

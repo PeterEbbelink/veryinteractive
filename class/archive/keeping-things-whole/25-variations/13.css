@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+}
+h3 {
+	position:fixed;
+	margin: 0;
+	margin-top: 20px;
+	left: 30px;
+}
+p {
+	position: fixed;
+	margin: 0;
+	margin-top: 45px;
+	left: 30px;
+}
+p.bottom {
+	position: relative;
+	top: 100px;
+	left:0;
+	padding: 1000px 0 300px 30px;
+}
