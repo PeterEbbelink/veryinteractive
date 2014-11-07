@@ -84,10 +84,10 @@ $(document).ready(function() {
         return " <img src='../../../images/block-yellow.svg' class='block'> ";
   };
 
-  $("body.november *").replaceText( /this|that|those/gi, blueblock );
-  $("body.november *").replaceText( /( |^)design[^A-Za-z0-9]|( |^)designer[^A-Za-z0-9]/gi, greenblock );
-  $("body.november *").replaceText( /( |^)art[^A-Za-z0-9]|( |^)artist[^A-Za-z0-9]/gi, redblock );
-  $("body.november *").replaceText( /( |^)new[^A-Za-z0-9]/gi, yellowblock );
+  $("body.november .document.text *").replaceText( /this|that|those/gi, blueblock );
+  $("body.november .document.text *").replaceText( /( |^)design[^A-Za-z0-9]|( |^)designer[^A-Za-z0-9]/gi, greenblock );
+  $("body.november .document.text *").replaceText( /( |^)art[^A-Za-z0-9]|( |^)artist[^A-Za-z0-9]/gi, redblock );
+  $("body.november .document.text *").replaceText( /( |^)new[^A-Za-z0-9]/gi, yellowblock );
 
   $('.dots a').each(function(index) {
     $(this).click(function(e) {
