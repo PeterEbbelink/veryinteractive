@@ -17,7 +17,7 @@
   <script>
   $( document ).ready(function() {
     // set the date we're counting down to
-    var target_date = new Date("Jan 15, 2015").getTime();
+    var target_date = new Date("Jan 12, 2015").getTime();
      
     // variables for time units
     var days, hours, minutes, seconds;
@@ -52,7 +52,11 @@
 
 </head>
 
-<body class="page">
+<body id="snowflakeContainer" class="page">
+
+  <p class="snowflake">*</p>
+
+  <div class="generic-container">
 
 <div id="main-column">
 
@@ -73,7 +77,7 @@
 
     <section>
 
-      <h2>Class will resume Spring 2015</h2>
+      <h2>Class will resume on Monday, January 12, 2015</h2>
       <p>
         <div id="countdown">...</div>
       </p>
@@ -81,6 +85,8 @@
     </section>
 
   </div>
+
+</div>
 
 </div>
 
