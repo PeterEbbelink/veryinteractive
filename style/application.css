@@ -1081,7 +1081,7 @@ body.november .document a:hover {
 /* DECEMBER THEME */
 
 body.december #house {
-	background: white url('../images/town-december.svg') no-repeat;
+	background: #BEC6C9 url('../images/town-december.svg') no-repeat;
 	background-size: 100% auto;
 }
 
