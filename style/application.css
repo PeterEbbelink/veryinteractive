@@ -1117,19 +1117,17 @@ body.december .document.text blockquote {
 body.december .document,
 body.december .generic-container {
 	position: absolute;
-	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
 }
 
-body.december .document {
+/*body.december .document {
 	margin-top: 80px;
 }
 
 body.december .document.text .inner {
 	margin-bottom: 1em;
-}
+}*/
 
 #snowflakeContainer {
 	position: absolute;
@@ -1214,13 +1212,13 @@ body.december .document.text .inner {
 		top: 150px;
 	}
 
-	body.december .document {
+/*	body.december .document {
 		margin-top: 164px;
 	}
 
 	body.december .document.text {
 		margin-top: 80px;
-	}
+	}*/
 
 	/*body.november #house {
 		margin-top: -1px;
