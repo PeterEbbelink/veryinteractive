@@ -544,7 +544,8 @@ a.library-item:hover,
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: yellow;
+  border: 1px solid white;
+  background: white;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -564,9 +565,6 @@ a.library-item:hover,
 }
 
 #circle:hover {
-	-webkit-transform:rotate(-360deg);
-  -moz-transform:rotate(-360deg);
-  -o-transform:rotate(-360deg);
 }
 
 
@@ -1149,19 +1147,11 @@ body.december .document.text blockquote {
 	-webkit-font-smoothing: antialiased;*/
 }
 
-body.december .document,
+/*body.december .document,
 body.december .generic-container {
 	position: absolute;
 	left: 0;
 	right: 0;
-}
-
-/*body.december .document {
-	margin-top: 80px;
-}
-
-body.december .document.text .inner {
-	margin-bottom: 1em;
 }*/
 
 #snowflakeContainer {
