@@ -89,7 +89,8 @@ nav .current,
 .document .metadata h1,
 .back-to-top,
 #meta-bar,
-#circle {
+#circle,
+#town-announcement {
 	font-family: 'Inconsolata', courier new, courier;
 	font-size: 17px;
 	line-height: 1.2;/*
@@ -565,6 +566,15 @@ a.library-item:hover,
 
 #circle:hover {
   border: 1px solid black;
+}
+
+#town-announcement{
+  padding: 20px 0 12px;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
 }
 
 

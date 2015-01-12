@@ -30,6 +30,10 @@ ul, li {
   list-style-type: none;
 }
 
+iframe {
+  border: 0;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -120,7 +124,7 @@ nav .info-link {
 /* LINK DUMP */
 
 .auth-links {
-  bottom: 0;
+  bottom: -1px;
   padding: 16px;
   left: 0;
   right: 0;
@@ -128,15 +132,19 @@ nav .info-link {
   top: auto;
   text-align: center;
   text-transform: uppercase;
+  z-index: 11;
+  background: #BEC6C9;
 }
 
-.auth-links a {
-  background: url('../images/moving-underline.gif') repeat-x;
-  background-position: 0 100%;
+.auth-links a.login-link {
+  padding: 17px 24px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
-.auth-links a:hover {
+.auth-links a.login-link:hover {
   background: black;
+  color: #BEC6C9;
 }
 
 .overlay {
@@ -166,6 +174,10 @@ input {
   background: #BEC6C9;
   border: 1px solid black;
   border-radius: 0;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
 }
 
 ::-webkit-input-placeholder {
@@ -174,6 +186,9 @@ input {
 
 .ld-form input[type=submit] {
   cursor: pointer;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .ld-form input[type=submit]:hover {
@@ -181,14 +196,35 @@ input {
   color: #BEC6C9;
 }
 
+.ld-form-field-set {
+  margin-bottom: 5px;
+}
+
 .ld-form-submit-container {
   text-align: left;
 }
 
-a.signup-link {
+a.signup-link,
+a.login-link {
   background: url('../images/moving-underline.gif') repeat-x;
   background-position: 0 100%;
   color: black;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+a.signup-link:hover,
+a.login-link:hover {
+  background:#FDEE2F url('../images/moving-underline.gif') repeat-x;
+  background-position: 0 100%;
+}
+
+a.signup-link.is-active,
+a.login-link.is-active,
+.auth-links a.login-link {
+  background: none;
 }
 
 .auth-form-link.is-active, .auth-form-link:hover {
@@ -212,17 +248,14 @@ a.signup-link {
 
 .link-list {
   border: none;
-}
-
-.link-stub {
-  padding: 16px 12px;
-  margin-bottom: 22px;
+  margin-top: -6px;
 }
 
 .link-stub-avatar {
   position: absolute;
   z-index: 7;
   left: 16px;
+  top: 18px;
 }
 
 .link-stub-avatar img {
@@ -233,10 +266,12 @@ a.signup-link {
 }
 
 .link-stub {
+  padding: 26px;
   position: relative;
 }
 
 .link-stub a {
+  display: block;
   background: #BEC6C9;
   padding: 16px;
   padding-left: 46px;
