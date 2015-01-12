@@ -7,7 +7,6 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
     'laurel@beautiful-company.com',
     'wilnerbs@gmail.com',
     'lcsmith@gmail.com',
-    'jeff@rey.sc',
     'rebeccaabbe@gmail.com'
   ];
  

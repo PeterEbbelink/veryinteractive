@@ -23969,7 +23969,7 @@ var IconEditor = React.createClass({displayName: "IconEditor",
     var pixels = [];
 
     for (var i = 0; i < this.props.width * this.props.height; ++i) {
-      pixels.push(false);
+      pixels.push(0);
     }
 
     return {
@@ -23979,6 +23979,8 @@ var IconEditor = React.createClass({displayName: "IconEditor",
 
   componentDidMount: function () {
     window.addEventListener('mouseup', this.onStopPaint);
+
+    this.onChange(this.state.pixels);
   },
 
   componentWillUnmount: function () {
@@ -24023,8 +24025,8 @@ var IconEditor = React.createClass({displayName: "IconEditor",
     if (this.state.painting) {
       var pixels = this.state.pixels;
 
-      if (this.state.mode == 'add') this.state.pixels[index] = true;
-      else if (this.state.mode == 'subtract') this.state.pixels[index] = false;
+      if (this.state.mode == 'add') this.state.pixels[index] = 1;
+      else if (this.state.mode == 'subtract') this.state.pixels[index] = 0;
 
       this.setState({
         pixels: pixels
