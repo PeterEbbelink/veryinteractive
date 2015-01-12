@@ -20,7 +20,7 @@ body, input, nav a {
 }
 
 a { text-decoration: none; color: black; }
-a:active { color: red; }
+a:active { color: #BEC6C9; }
 a img { border: none; background: none; }
 a:visited { color: black; }
 
@@ -41,6 +41,7 @@ nav {
   text-transform: uppercase;
   border-bottom: 1px solid black;
   position: relative;
+  box-sizing: content-box !important;
 }
 
 nav li {
