@@ -23576,11 +23576,24 @@ var AddLinkForm = React.createClass({displayName: "AddLinkForm",
       valid: true
     };
   },
+ 
+  render: function () {
+    return (
+      React.createElement("div", {className: React.addons.classSet({
+        "add-link-form": true,
+        "is-active": this.props.active,
+        "is-invalid": !this.state.valid
+      })}, 
+        React.createElement("input", {onChange: this.onChange, 
+          onKeyUp: this.onKeyUp, 
+          type: "text", placeholder: "url", 
+          value: this.state.value}), 
 
-  onKeyUp: function (e) {
-    if (e.keyCode === 13) {
-      this.submit();
-    }
+        React.createElement("a", {className: "add-link-form-add-button", onClick: this.onSubmit}, 
+          "Add"
+        )
+      )
+    );
   },
 
   onChange: function (e) {
@@ -23592,12 +23605,20 @@ var AddLinkForm = React.createClass({displayName: "AddLinkForm",
     });
   },
 
-  submit: function () {
+  onKeyUp: function (e) {
+    if (e.keyCode === 13) {
+      this.onSubmit();
+    }
+  },
+
+  onSubmit: function () {
     var link = this.getFormattedLink();
     var user = UserService.getUser();
 
     if (!link) {
-      return this.setState({valid: false});
+      return this.setState({
+        valid: false
+      });
     }
 
     LinkService.createLink({
@@ -23606,7 +23627,9 @@ var AddLinkForm = React.createClass({displayName: "AddLinkForm",
       avatar: user.get('avatar')
     });
   
-    this.setState({value: ""});
+    this.setState({
+      value: ""
+    });
   },
 
   getFormattedLink: function () {
@@ -23622,7 +23645,7 @@ var AddLinkForm = React.createClass({displayName: "AddLinkForm",
       return false;
     }
 
-    var extension = val.split('/').shift().split('.').pop();
+    var extension = val.split('://').pop().split('/').shift().split('.').pop();
     if (!extension || extension.length > 4) return false;
 
     if (protocol === val) {
@@ -23630,25 +23653,6 @@ var AddLinkForm = React.createClass({displayName: "AddLinkForm",
     }
 
     return val;
-  },
- 
-  render: function () {
-    return (
-      React.createElement("div", {className: React.addons.classSet({
-        "add-link-form": true,
-        "is-active": this.props.active,
-        "is-invalid": !this.state.valid
-      })}, 
-        React.createElement("input", {onChange: this.onChange, 
-          onKeyUp: this.onKeyUp, 
-          type: "text", placeholder: "url", 
-          value: this.state.value}), 
-
-        React.createElement("a", {className: "add-link-form-add-button"}, 
-          "Add"
-        )
-      )
-    );
   }
 
 });
@@ -23772,7 +23776,7 @@ var AuthForm = React.createClass({displayName: "AuthForm",
         React.createElement("div", {className: "overlay-inner"}, 
           React.createElement("div", {className: "auth-form ld-form", onClick: this.onClickForm}, 
             React.createElement("div", {className: "ld-form-label"}, 
-              React.createElement("a", {onClick: this.onShowLogin, className: this.getLinkClass('login')}, "Login"), " /",  
+              React.createElement("a", {onClick: this.onShowLogin, className: this.getLinkClass('login')}, "Login"), " / ", 
               React.createElement("a", {onClick: this.onShowSignup, className: this.getLinkClass('signup')}, "Register")
             ), 
 
@@ -24202,7 +24206,7 @@ module.exports = Link;
 var makeService = require('lib/make_service'),
   Link = require('models/link');
 
-var links = [];
+var  links = [];
 
 var LinkService = makeService({
 
@@ -24222,9 +24226,13 @@ var LinkService = makeService({
 
   createLink: function (attrs) {
     var acl = new Parse.ACL();
+    acl.setPublicReadAccess(true);
     acl.setPublicWriteAccess(false);
+
+    attrs.ACL = acl;
+
     new Link(attrs).save()
-      .then(this.loadLinks)
+      .then(this.loadLinks, function (e) { debugger })
   }
 
 });

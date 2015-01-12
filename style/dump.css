@@ -130,6 +130,11 @@ nav .info-link {
   text-transform: uppercase;
 }
 
+.auth-links a {
+  background: url('../images/moving-underline.gif') repeat-x;
+  background-position: 0 100%;
+}
+
 .auth-links a:hover {
   background: black;
 }
@@ -181,7 +186,9 @@ input {
 }
 
 a.signup-link {
-  color: gray;
+  background: url('../images/moving-underline.gif') repeat-x;
+  background-position: 0 100%;
+  color: black;
 }
 
 .auth-form-link.is-active, .auth-form-link:hover {
@@ -209,6 +216,7 @@ a.signup-link {
 
 .link-stub {
   padding: 16px 12px;
+  margin-bottom: 22px;
 }
 
 .link-stub-avatar {
@@ -264,6 +272,17 @@ a.signup-link {
 
 .link-group-date {
   padding: 16px;
+}
+
+.add-link-form-add-button {
+  border: 1px solid black;
+  border-radius: 0;
+  color: black;
+}
+
+.add-link-form-add-button:hover {
+  background: black;
+  color: #BEC6C9;
 }
 
 /* MEDIA QUERIES */
