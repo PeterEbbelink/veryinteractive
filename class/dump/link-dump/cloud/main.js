@@ -15,7 +15,16 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
     'dearjieun@gmail.com',
     'jcpanek@gmail.com',
     'hello@erikcarter.net',
-    'ctaylor03@risd.edu'
+    'ctaylor03@risd.edu',
+    'ninachidichimo@gmail.com',
+    'sthurer@gmail.com',
+    'zachary.kaplan@rhizome.org',
+    'chase.booker@yale.edu',
+    'carr.chadwick@yale.edu',
+    'laura.coombs@yale.edu',
+    'marta.galazcancio@yale.edu',
+    'theodore.mathias@yale.edu',
+    'caroline.potter@yale.edu'
   ];
  
   var user = request.object;
