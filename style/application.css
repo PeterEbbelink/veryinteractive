@@ -91,12 +91,22 @@ nav .current,
 #meta-bar,
 #circle,
 #town-announcement,
-.calendar-box {
+.calendar-box,
+.calendar-box .date,
+.calendar-expanded .date {
 	font-family: 'Inconsolata', courier new, courier;
 	font-size: 17px;
 	line-height: 1.2;/*
 	letter-spacing: 1px;*/
 	-webkit-font-smoothing: antialiased;
+}
+
+.calendar-box .class,
+.calendar-expanded .class {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 54px;
+  letter-spacing: -4px;
+  margin: -10px 0 0  -1px;
 }
 
 
@@ -410,6 +420,7 @@ nav .info-link {
 
 .grid-wrap {    
     margin-left: -16px; /* the same as your gutter */
+    margin-bottom: 2em;
     overflow: hidden;
     clear: both; }
    
@@ -462,16 +473,25 @@ a.calendar-box:hover {
   cursor: pointer;
 }
 
-.calendar-box .class {
+.calendar-box .class,
+.calendar-expanded .class,
+.calendar-box .date,
+.calendar-expanded .date {
   display: block;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 3.1em;
-  letter-spacing: -4px;
-  margin: -0.2em 0 0  -0.01em;
 }
 
 .calendar-box .projects {
   margin-top: 1em;
+}
+
+.calendar-expanded {
+  border: 1px solid black;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.calendar-expanded .date {
+  margin-bottom: 20px;
 }
 
 /* PROJECTS */
