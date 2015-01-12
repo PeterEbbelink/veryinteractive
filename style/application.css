@@ -93,7 +93,9 @@ nav .current,
 #town-announcement,
 .calendar-box,
 .calendar-box .date,
-.calendar-expanded .date {
+.calendar-expanded .date,
+.calendar-box .class,
+.calendar-expanded .class {
 	font-family: 'Inconsolata', courier new, courier;
 	font-size: 17px;
 	line-height: 1.2;/*
@@ -101,8 +103,7 @@ nav .current,
 	-webkit-font-smoothing: antialiased;
 }
 
-.calendar-box .class,
-.calendar-expanded .class {
+.some-new-style {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 54px;
   letter-spacing: -4px;
