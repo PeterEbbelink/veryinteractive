@@ -11,7 +11,11 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
     'dan@linkedbyair.net',
     'tamara@linkedbyair.net',
     'dylan@linkedbyair.net',
-    'maurann@linkedbyair.net'
+    'maurann@linkedbyair.net',
+    'dearjieun@gmail.com',
+    'jcpanek@gmail.com',
+    'hello@erikcarter.net',
+    'ctaylor03@risd.edu'
   ];
  
   var user = request.object;
