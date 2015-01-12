@@ -7,7 +7,11 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
     'laurel@beautiful-company.com',
     'wilnerbs@gmail.com',
     'lcsmith@gmail.com',
-    'rebeccaabbe@gmail.com'
+    'rebeccaabbe@gmail.com',
+    'dan@linkedbyair.net',
+    'tamara@linkedbyair.net',
+    'dylan@linkedbyair.net',
+    'maurann@linkedbyair.net'
   ];
  
   var user = request.object;
@@ -16,6 +20,6 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
   if (validUsers.indexOf(email) !== -1) {
     response.success();
   } else {
-    response.error("If you are registered for this class, use your yale.edu email to sign up. Otherwise if you are not in the class but would like to contribute, email laurel@linkedbyair.net to put you on the special guest list.");
+    response.error("It seems like your email isn't on the list. Good luck out there...");
   }
 });

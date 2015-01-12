@@ -23645,8 +23645,9 @@ var AddLinkForm = React.createClass({displayName: "AddLinkForm",
       return false;
     }
 
-    var extension = val.split('://').pop().split('/').shift().split('.').pop();
-    if (!extension || extension.length > 4) return false;
+    var host = val.split('://').pop().split('/').shift();
+    var hostParts = host.split('.');
+    if (hostParts.length < 2) return false;
 
     if (protocol === val) {
       val = 'http://' + val;
@@ -23890,6 +23891,7 @@ var AuthForm = React.createClass({displayName: "AuthForm",
     
     UserService.createUser(this.state.email, this.state.password, {
       name: this.state.name,
+      email: this.state.email,
       avatar: this.state.avatar
     });
   }
@@ -23905,7 +23907,8 @@ var Avatar = React.createClass({displayName: "Avatar",
 
   getDefaultProps: function () {
     return {
-      size: 32
+      size: 32,
+      model: [0,0,0,0]
     }
   },
 
@@ -23980,7 +23983,7 @@ var IconEditor = React.createClass({displayName: "IconEditor",
   componentDidMount: function () {
     window.addEventListener('mouseup', this.onStopPaint);
 
-    this.onChange(this.state.pixels);
+    if (this.props.onChange) this.props.onChange(this.state.pixels);
   },
 
   componentWillUnmount: function () {
@@ -24152,8 +24155,8 @@ var LinkStub = React.createClass({displayName: "LinkStub",
         React.createElement("div", {className: "link-stub-avatar"}, 
           React.createElement(Avatar, {model: link.avatar})
         ), 
-        
-        React.createElement("a", {href: link.text}, link.text), 
+
+        React.createElement("a", {href: link.text, target: "_blank"}, link.text), 
         React.createElement("div", {className: "link-stub-username"}, link.username)
       )
     );
