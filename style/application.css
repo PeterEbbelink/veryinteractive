@@ -90,7 +90,8 @@ nav .current,
 .back-to-top,
 #meta-bar,
 #circle,
-#town-announcement {
+#town-announcement,
+.calendar-box {
 	font-family: 'Inconsolata', courier new, courier;
 	font-size: 17px;
 	line-height: 1.2;/*
@@ -405,6 +406,74 @@ nav .info-link {
 }
 
 
+/* CALENDAR */
+
+.grid-wrap {    
+    margin-left: -16px; /* the same as your gutter */
+    overflow: hidden;
+    clear: both; }
+   
+.grid-col {
+    float: left;
+    padding-left: 16px; /* this is your gutter between columns */
+    margin-bottom: 16px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.col-full {
+  width: 100%; }
+
+.col-one-half {
+  width: 50%; }
+
+.col-one-third {
+  width: 33.333%; }
+
+.col-two-thirds {
+  width: 66.666%; }
+
+.col-one-quarter {
+  width: 25%; }
+
+.col-three-quarters {
+  width: 75%; }
+
+.calendar-box.break {
+  border: 1px solid #BEC6C9;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 203px;
+}
+
+a.calendar-box,
+span.calendar-box {
+  display: block;
+  background: none;
+  border: 1px solid black;
+  padding: 16px;
+  height: 203px;
+}
+
+a.calendar-box:hover {
+  background: #FDEE2F;
+  cursor: pointer;
+}
+
+.calendar-box .class {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3.1em;
+  letter-spacing: -4px;
+  margin: -0.2em 0 0  -0.01em;
+}
+
+.calendar-box .projects {
+  margin-top: 1em;
+}
+
 /* PROJECTS */
 
 .visual-tweets, a.visual-tweets {
@@ -446,6 +515,14 @@ nav .info-link {
 .weather .top-link a:hover {
 	background: rgb(255,44,57) !important;
 	-webkit-animation: none !important;
+}
+
+.tba, a.tba {
+  /*background: rgb(178,154,152);
+  border-bottom: 1px solid rgb(178,154,152);*/
+  background: rgb(255,44,57) !important;
+  border-bottom: 1px solid rgb(255,44,57);
+  background-image: none !important;
 }
 
 /* TEXTS LIBRARY */
@@ -569,7 +646,7 @@ a.library-item:hover,
 }
 
 #town-announcement{
-  padding: 20px 0 12px;
+  padding: 18px 0 12px;
   position: absolute;
   top: 54px;
   left: 0;
@@ -1256,6 +1333,10 @@ body.december .generic-container {
 
   #town-announcement {
     top: 175px;
+  }
+
+  #meta-bar {
+    display: none;
   }
 
 /*	body.december .document {
