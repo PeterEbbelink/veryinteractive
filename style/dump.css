@@ -1,0 +1,199 @@
+body {
+  background: #BEC6C9;
+  margin: 0;
+  padding: 0;
+}
+
+body, input {
+  font-family: 'Inconsolata', courier new, courier;
+  font-size: 17px;
+  line-height: 1.2;/*
+  letter-spacing: 1px;*/
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Navigation */
+
+nav {
+  text-align: center;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 12px;
+  padding: 22px 3px;
+}
+
+nav li {
+  background: url('../images/bullet-none.png') no-repeat;
+  background-size: 6px 6px;
+  background-position:center 24%;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+nav li:hover {
+  background: url('../images/bullet-empty.svg') no-repeat;
+  background-size: 6px 6px;
+  background-position:center 24%;
+}
+
+nav .current, nav li.current:hover {
+  background: url('../images/bullet.svg') no-repeat;
+  background-size: 6px 6px;
+  background-position:center 20%;
+  cursor: pointer;
+}
+
+nav .home-link {
+  position: absolute;
+  left: 16px;
+  top: 22px;
+  height: 12px;
+  width: 12px;
+  background: url('../images/home.svg') no-repeat;
+  background-size: 12px 12px;
+}
+
+nav .info-link {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+  height: 12px;
+  width: 12px;
+  background: url('../images/info.svg') no-repeat;
+  background-size: 12px 12px;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+/* LINK DUMP */
+
+.auth-links {
+  bottom: 0;
+  padding: 16px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid black;
+  top: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.auth-links a:hover {
+  background: black;
+}
+
+.overlay {
+  background: none;
+}
+
+.auth-form,
+input {
+  background: #BEC6C9;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+.ld-form input[type=submit] {
+  cursor: pointer;
+}
+
+.ld-form input[type=submit]:hover {
+  background: black;
+  color: #BEC6C9;
+}
+
+.ld-form-submit-container {
+  text-align: left;
+}
+
+a.signup-link {
+  color: gray;
+}
+
+.auth-form-link.is-active, .auth-form-link:hover {
+  text-decoration: none;
+}
+
+.link-stub-username {
+  display: none;
+}
+
+.auth-form {
+}
+
+.ld-form-close {
+  display: none;
+}
+
+.ld-form-label {
+  text-transform: uppercase;
+}
+
+.link-list {
+  border: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+
+  nav {
+    display: block;
+    height: auto;
+    padding: 12px 0;
+  }
+
+  nav li {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+    background-position: 96% !important;
+  }
+
+  nav li:hover {
+    background-position: 96% !important;
+  }
+
+  nav li.current {
+    background: url('../images/bullet.svg') no-repeat;
+    background-size: 6px 6px;
+    background-position: 96% !important;
+    cursor: pointer;
+    margin-top: 2px;
+  }
+
+  nav .info-link {
+    left: 16px;
+    top: 52px;
+  }
+
+}

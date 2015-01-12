@@ -545,8 +545,6 @@ a.library-item:hover,
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 1px solid white;
-  background: white;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -566,6 +564,7 @@ a.library-item:hover,
 }
 
 #circle:hover {
+  border: 1px solid black;
 }
 
 

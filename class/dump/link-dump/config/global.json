@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Dump": {
+            "applicationId": "RE5Oe7q1qtDeadnnWcVw7qMUaKXmRNw1yD8YveeD", 
+            "masterKey": "pJYpCS1S0NwlMgsuAMpxnPVljivqsBWzFDPPICXh"
+        }, 
+        "_default": {
+            "link": "Dump"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.3"
+    }
+}
