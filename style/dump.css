@@ -40,7 +40,6 @@ iframe {
 .auth-links {
   position: fixed;
   bottom: -1px;
-  padding: 16px;
   left: 0;
   right: 0;
   border-top: 1px solid black;
@@ -49,17 +48,15 @@ iframe {
   text-transform: uppercase;
   z-index: 11;
   background: #BEC6C9;
+  padding: 18px;
+}
+
+.auth-links span {
+  display: inline-block;
 }
 
 .auth-links a.login-link {
-  padding: 17px 24px;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-}
-
-.auth-links a.login-link:hover {
-  background: black;
-  color: #BEC6C9;
+  color: black;
 }
 
 .overlay {
@@ -84,6 +81,10 @@ iframe {
   color: black;
 }
 
+.auth-form.ld-form {
+  border-radius: 0;
+}
+
 .auth-form,
 input {
   background: #BEC6C9;
@@ -103,12 +104,13 @@ input {
   cursor: pointer;
   text-transform: uppercase;
   margin: 0;
+  border-radius: 0;
+  padding: 18px 30px;
   margin-top: 20px;
 }
 
 .ld-form input[type=submit]:hover {
-  background: black;
-  color: #BEC6C9;
+  background: #FDEE2F;
 }
 
 .ld-form-field-set {
@@ -120,7 +122,10 @@ input {
 }
 
 a.signup-link,
-a.login-link {
+a.login-link,
+a.logout-link {
+  text-decoration: none;
+  border-bottom: 0;
   background: url('../images/moving-underline.gif') repeat-x;
   background-position: 0 100%;
   color: black;
@@ -131,14 +136,14 @@ a.login-link {
 }
 
 a.signup-link:hover,
-a.login-link:hover {
+a.login-link:hover,
+a.logout-link:hover {
   background:#FDEE2F url('../images/moving-underline.gif') repeat-x;
   background-position: 0 100%;
 }
 
 a.signup-link.is-active,
-a.login-link.is-active,
-.auth-links a.login-link {
+a.login-link.is-active {
   background: none;
 }
 
@@ -148,9 +153,6 @@ a.login-link.is-active,
 
 .link-stub-username {
   display: none;
-}
-
-.auth-form {
 }
 
 .ld-form-close {
@@ -230,11 +232,21 @@ a.login-link.is-active,
   border: 1px solid black;
   border-radius: 0;
   color: black;
+  padding: 18px 26px;
+  text-transform: uppercase;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
 }
 
 .add-link-form-add-button:hover {
-  background: black;
-  color: #BEC6C9;
+  background: #FDEE2F;
+}
+
+.add-link-form input {
+  padding: 18px 26px;
+  margin-right: 10px;
 }
 
 

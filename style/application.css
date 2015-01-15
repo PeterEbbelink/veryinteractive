@@ -472,6 +472,10 @@ span.calendar-box {
 a.calendar-box:hover {
   background: #FDEE2F;
   cursor: pointer;
+  -webkit-animation: pulse_pleasant 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .calendar-box .class,
