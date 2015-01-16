@@ -37,6 +37,46 @@ iframe {
 
 /* LINK DUMP */
 
+@-webkit-keyframes marquee {
+
+ 0% { left: 0; }
+
+ 100% { left: -100%; } }
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.dump-rules {
+  padding: 10px 0 11px;
+  border-bottom: 1px solid black;
+}
+
+/*.dump-rules {
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  padding: 10px 0 11px;
+  border-bottom: 1px solid black;
+}
+
+.dump-rules div {
+  display: block;
+  width: 200%;
+  height: 54px;
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+}
+
+.dump-rules span {
+  float: left;
+  width: 50%;
+}*/
+
 .auth-links {
   position: fixed;
   bottom: -1px;
@@ -165,7 +205,6 @@ a.login-link.is-active {
 
 .link-list {
   border: none;
-  margin-top: -6px;
 }
 
 .link-stub-avatar {
