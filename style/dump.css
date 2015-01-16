@@ -163,7 +163,8 @@ input {
 
 a.signup-link,
 a.login-link,
-a.logout-link {
+a.logout-link,
+#credit a {
   text-decoration: none;
   border-bottom: 0;
   background: url('../images/moving-underline.gif') repeat-x;
@@ -177,7 +178,8 @@ a.logout-link {
 
 a.signup-link:hover,
 a.login-link:hover,
-a.logout-link:hover {
+a.logout-link:hover,
+#credit a:hover {
   background:#FDEE2F url('../images/moving-underline.gif') repeat-x;
   background-position: 0 100%;
 }
@@ -286,6 +288,13 @@ a.login-link.is-active {
 .add-link-form input {
   padding: 18px 26px;
   margin-right: 10px;
+}
+
+#credit {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 47;
 }
 
 
