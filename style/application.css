@@ -1307,6 +1307,29 @@ body.december .generic-container {
 	}
 
 }
+
+@media screen and (max-width: 673px) {
+
+  a.calendar-box,
+  span.calendar-box {
+    height: 100px;
+  }
+
+  .col-one-third {
+    width
+  }
+
+  .calendar-box .class,
+  .calendar-box .projects {
+    display: none;
+  }
+
+  .grid-wrap {
+    max-width: 354px;
+    margin: 0 auto;
+  }
+
+}
 		
 @media screen and (max-width: 480px) {
 
