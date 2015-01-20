@@ -460,6 +460,24 @@ nav .info-link {
   width: 203px;
 }
 
+.calendar-box.completed {
+  border: 1px solid #BEC6C9;
+  transition: .1s border ease-out;
+  -webkit-transition: .1s border ease-out;
+  -moz-transition: .1s border ease-out;
+  -o-transition: .1s border ease-out;
+}
+
+.calendar-box.completed:hover {
+  background: none;
+  border: 1px solid black;
+  -webkit-animation: none;
+}
+
+.grid-wrap.single .calendar-box.completed {
+  border: 1px solid black;
+}
+
 a.calendar-box,
 span.calendar-box {
   display: block;
