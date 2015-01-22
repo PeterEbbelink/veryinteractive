@@ -4,27 +4,21 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
   var validUsers = [
     'dnbrwstr@gmail.com',
     'laurel@linkedbyair.net',
-    'laurel@beautiful-company.com',
-    'wilnerbs@gmail.com',
-    'lcsmith@gmail.com',
-    'rebeccaabbe@gmail.com',
-    'dan@linkedbyair.net',
-    'tamara@linkedbyair.net',
-    'dylan@linkedbyair.net',
-    'maurann@linkedbyair.net',
-    'dearjieun@gmail.com',
-    'jcpanek@gmail.com',
-    'hello@erikcarter.net',
-    'ctaylor03@risd.edu',
-    'ninachidichimo@gmail.com',
-    'sthurer@gmail.com',
-    'zachary.kaplan@rhizome.org',
+    'shoshana.bieler@yale.edu',
     'chase.booker@yale.edu',
     'carr.chadwick@yale.edu',
     'laura.coombs@yale.edu',
+    'walden.davis@yale.edu',
+    'bobby.dresser@gmail.com',
+    'lian.fumerton-liu@yale.edu',
     'marta.galazcancio@yale.edu',
+    'cindy.hwang@yale.edu',
     'theodore.mathias@yale.edu',
-    'caroline.potter@yale.edu'
+    'eric.nylund@yale.edu',
+    'caroline.potter@yale.edu',
+    'kai.takahashi@yale.edu',
+    'megan.valentine@yale.edu',
+    'mariah.xu@yale.edu'
   ];
  
   var user = request.object;
