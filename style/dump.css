@@ -306,6 +306,10 @@ a.login-link.is-active {
     height: 175px !important;
   }
 
+  .dump-rules {
+    margin-bottom: 5px;
+  }
+
   .auth-links {
     position: relative;
     border: 0;
