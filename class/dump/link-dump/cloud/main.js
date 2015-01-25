@@ -4,6 +4,7 @@ Parse.Cloud.beforeSave(Parse.User, function(request, response) {
   var validUsers = [
     'dnbrwstr@gmail.com',
     'laurel@linkedbyair.net',
+    'hi@beautiful-company.com',
     'shoshana.bieler@yale.edu',
     'chase.booker@yale.edu',
     'carr.chadwick@yale.edu',
