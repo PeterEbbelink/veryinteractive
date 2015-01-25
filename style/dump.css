@@ -207,6 +207,7 @@ a.login-link.is-active {
 
 .link-list {
   border: none;
+  margin-bottom: 54px;
 }
 
 .link-stub-avatar {

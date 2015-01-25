@@ -68,7 +68,8 @@ h3,
 .document.text,
 .document.text h1,
 .document.text h2,
-#greeting {
+#greeting,
+.large {
 	font-family: Times New Roman, Times, serif;
 	font-size: 28px;
 	line-height: 32px;
@@ -515,6 +516,14 @@ a.calendar-box:hover {
 
 .calendar-expanded .date {
   margin-bottom: 20px;
+}
+
+#upcoming {
+  position: absolute;
+  top: 72px;
+  left: 16px;
+  /*border: 1px solid black;
+  padding: 16px;*/
 }
 
 /* PROJECTS */
