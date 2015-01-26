@@ -538,12 +538,14 @@ a.calendar-box:hover {
 	-webkit-animation: none !important;
 }
 
-.twenty-five-variations, a.twenty-five-variations {
+.twenty-five-variations, a.twenty-five-variations,
+.exercises-in-style, a.exercises-in-style {
 	background: rgb(95,142,12) !important;
 	border-bottom: 1px solid rgb(95,142,12);
 	background-image: none !important;
 }
-.twenty-five-variations .top-link a:hover {
+.twenty-five-variations .top-link a:hover,
+.exercises-in-style .top-link a:hover {
 	background: rgb(95,142,12) !important;
 	-webkit-animation: none !important;
 }
