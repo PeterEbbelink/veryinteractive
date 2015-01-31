@@ -527,13 +527,15 @@ a.calendar-box:hover {
 
 /* PROJECTS */
 
-.visual-tweets, a.visual-tweets {
+.visual-tweets, a.visual-tweets,
+.simple-frame, a.simple-frame {
 	background: rgb(253,238,47) !important;
 	border-bottom: 1px solid rgb(253,238,47);
 	background-image: none !important;
 }
 
-.visual-tweets .top-link a:hover {
+.visual-tweets .top-link a:hover,
+.simple-frame .top-link a:hover {
 	background: rgb(253,238,47) !important;
 	-webkit-animation: none !important;
 }
