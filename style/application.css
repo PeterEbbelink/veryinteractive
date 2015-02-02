@@ -686,6 +686,11 @@ ul.reading li {
   padding: 16px;
 }
 
+.example a {
+  display: inline-block;
+  margin-bottom: 0.2em;
+}
+
 .example-caption {
   margin-top: 0.5em;
 }

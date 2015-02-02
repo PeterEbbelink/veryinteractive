@@ -589,9 +589,12 @@ var LinkList = React.createClass({displayName: "LinkList",
     }
 
     return groups.sort(function (a, b) {
-      if (new Date(a.links[0].createdAt) > new Date(b.links[0].createdAt)) {
+      var dateA = new Date(a.links[0].createdAt);
+      var dateB = new Date(b.links[0].createdAt);
+
+      if (dateA > dateB) {
         return -1;
-      } else if (new Date(a) < new Date(b)) {
+      } else if (dateA < dateB) {
         return 1;
       } else {
         return 0;
