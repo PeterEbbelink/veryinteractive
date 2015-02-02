@@ -68,7 +68,8 @@ h3,
 .document.text,
 .document.text h1,
 .document.text h2,
-#greeting {
+#greeting,
+.example.text {
 	font-family: Times New Roman, Times, serif;
 	font-size: 28px;
 	line-height: 32px;
@@ -126,7 +127,7 @@ nav .current,
 #greeting {
 	position: absolute;
 	width: 100%;
-	bottom: 75px;
+	bottom: 50px;
 	text-align: center;
 }
 
@@ -661,6 +662,37 @@ a.library-item:hover,
 	padding-top: 24px;
 }
 
+/* NEW IN 2015 */
+
+.people-home a img {
+  width: 16px;
+  height: 16px;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+.people-home a:hover img {
+  background: #FDEE2F;
+}
+
+ul.reading li {
+  margin-bottom: 1em;
+}
+
+.example {
+  border: 1px solid black;
+  padding: 16px;
+}
+
+.example-caption {
+  margin-top: 0.5em;
+}
+
+.example-container {
+  margin-bottom: 60px;
+}
 
 /* ANNOUNCEMENT CIRCLE */
 
