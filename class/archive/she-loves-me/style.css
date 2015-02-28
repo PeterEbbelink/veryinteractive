@@ -1,0 +1,128 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: courier new;
+}
+
+body {
+  background: cyan;
+  margin: 0;
+}
+
+#poem-box {
+  max-width: 100%;
+  height: 100%;
+  background: cyan;
+}
+
+#flower-container {
+  width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#stem {
+  position: absolute;
+  background: green;
+  width: 25px;
+  height: 200px;
+  bottom: 0;
+  right: 47%;
+}
+
+#flower-center {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  position: absolute;
+  right: 44%;
+  bottom: 175px;
+  z-index: 3;
+}
+
+.petal {
+  width: 100px;
+  height: 50px;
+  background: white;
+  color: green;
+  text-align: center;
+  vertical-align: -10px;
+  -moz-border-radius: 50px / 25px;
+  -webkit-border-radius: 50px / 25px;
+  border-radius: 50px / 25px;
+  position: absolute;
+  line-height: 50px;
+}
+
+.petal:hover {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.rotation-one {
+  bottom: 175px;
+  right: 22%;
+}
+
+.rotation-two {
+  bottom: 145px;
+  right: 23%;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.rotation-three {
+  bottom: 134px;
+  right: 36%;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.rotation-four {
+  bottom: 145px;
+  right: 48%;
+  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.first-level,
+.second-level,
+.third-level,
+.fourth-level,
+.fifth-level,
+.sixth-level,
+.seventh-level {
+  display: none;
+}
+
+#info {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+body.info {
+  margin: 20px;
+  height: auto;
+  width: auto;
+}
+
+.column-center {
+  width: 500px;
+  margin: 250px auto;
+}
+
+.column-center p {
+  margin-bottom: 250px;
+}
+
+img {
+  max-width: 100%;
+}

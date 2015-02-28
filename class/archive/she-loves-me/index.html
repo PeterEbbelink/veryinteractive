@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Poem 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/lazyload.js"></script>
+
+  <script>
+    $(document).ready(function() {
+    
+      function petalFade(x){
+      	$(x).delay(500).fadeIn();
+      };
+      
+  	  petalFade('.petal.first-level');
+	  
+      var count = 0;
+      
+      $('.petal:not(.seventh-level)').click(function(){
+
+        $(this).hide();
+        console.log("The petal was removed!");
+        count++;
+        console.log("The count is " + count + ".");
+
+        if(count == 3){
+          console.log("The count is equal to three.");
+          petalFade('.second-level');
+        }
+
+        if(count == 7){
+          console.log("The count is equal to seven.");
+          petalFade('.third-level');
+        }
+        
+        if(count == 9){
+          console.log("The count is equal to nine.");
+          petalFade('.fourth-level');
+        }
+        
+        if(count == 12){
+          console.log("The count is equal to twelve.");
+          petalFade('.fifth-level');
+        }
+        
+        if(count == 13){
+          console.log("The count is equal to thirteen.");
+          petalFade('.sixth-level');
+        }
+        
+        if(count == 15){
+          console.log("The count is equal to fifteen.");
+          petalFade('.seventh-level');
+        }
+
+      });
+
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+<div id="poem-box">
+
+<div id="flower-container">
+
+  <div id="stem"></div>
+
+  <div id="flower-center"></div>
+  
+  <!-- FIRST LEVEL -->
+
+  <div class="petal rotation-one first-level">
+    she
+  </div>
+
+  <div class="petal rotation-two first-level">
+    loves
+  </div>
+
+  <div class="petal rotation-three first-level">
+    me
+  </div>
+  
+  <!-- SECOND LEVEL -->
+  
+  <div class="petal rotation-one second-level">
+    she
+  </div>
+
+  <div class="petal rotation-two second-level">
+    loves
+  </div>
+
+  <div class="petal rotation-three second-level">
+    me
+  </div>
+
+  <div class="petal rotation-four second-level">
+    not
+  </div>
+  
+  <!-- THIRD LEVEL -->
+
+  <div class="petal rotation-one third-level">
+    she
+  </div>
+
+  <div class="petal rotation-two third-level">
+    loves
+  </div>
+
+  <!-- FOURTH LEVEL -->
+  
+  <div class="petal rotation-one fourth-level">
+    she
+  </div>
+
+  <div class="petal rotation-two fourth-level">
+    loves
+  </div>
+
+  <div class="petal rotation-three fourth-level">
+    me
+  </div>
+  
+  <!-- FIFTH LEVEL -->
+  
+  <div class="petal rotation-one fifth-level">
+    she
+  </div>
+  
+  <!-- SIXTH LEVEL -->
+  
+  <div class="petal rotation-one sixth-level">
+    she
+  </div>
+
+  <div class="petal rotation-two sixth-level">
+    loves
+  </div>
+  
+  <!-- SEVENTH LEVEL -->
+  
+  <div class="petal rotation-one seventh-level">
+    she
+  </div>
+  
+</div>
+
+</div>
+
+<div id="info">
+  <a href="info">?</a>
+</div>
+
+</body>
+
+</html>

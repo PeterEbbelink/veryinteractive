@@ -316,6 +316,19 @@ nav .info-link {
 	margin: 0 1em 1em 0;
 }
 
+.float-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.image-container {
+  margin-bottom: 1em;
+}
+
+.clearer {
+  clear: both;
+}
+
 .document .side li a {
 	padding: 0;
 	line-height: 1;
