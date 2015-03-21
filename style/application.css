@@ -1444,8 +1444,12 @@ body.december .generic-container {
 	}
 
   h1, h2, h3, .document.text, .document.text h1, .document.text h2, #greeting, .example.text {
-    font-size: 21px;
-    line-height: 25px;
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .document.text {
+    margin-bottom: 1em;
   }
 
   .float-right, .float-left {
