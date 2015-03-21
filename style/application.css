@@ -1443,6 +1443,17 @@ body.december .generic-container {
 		top: 52px;
 	}
 
+  h1, h2, h3, .document.text, .document.text h1, .document.text h2, #greeting, .example.text {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .float-right, .float-left {
+    margin: 0;
+    margin-bottom: 1em;
+    float: none;
+  }
+
 	.accordion-year {
 		display: none;
 	}
