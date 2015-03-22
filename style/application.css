@@ -40,12 +40,18 @@ ul.bullets li { list-style-type: circle; list-style: inside; }
 /* CLASS-SPECIFIC DOCUMENT */
 
 .document .inner,
-.document.text .caption,
 .document.text .notes,
+.document.text .caption,
 .document.text blockquote,
 .metadata {
 	max-width: 640px;
 }
+
+/*.document.text .float-left img,
+.document.text .float-right img,
+.document.text .caption {
+  float: left;
+}*/
 
 /* TYPOGRAPHY */
 
