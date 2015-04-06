@@ -582,12 +582,14 @@ a.calendar-box:hover {
 	-webkit-animation: none !important;
 }
 
-.weather, a.weather {
+.weather, a.weather,
+.tool, a.tool {
 	background: rgb(255,44,57) !important;
 	border-bottom: 1px solid rgb(255,44,57);
 	background-image: none !important;
 }
-.weather .top-link a:hover {
+.weather .top-link a:hover,
+.tool .top-link a:hover {
 	background: rgb(255,44,57) !important;
 	-webkit-animation: none !important;
 }
