@@ -1410,7 +1410,7 @@ body.june2015 #house {
 }
 
 body.june2015 .document a:hover {
-  background-color: #fff;
+  background-color: #fff !important;
   background: url('../images/moving-underline.gif') repeat-x;
   background-position: 0 100%;
 }
