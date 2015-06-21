@@ -15,37 +15,38 @@
   <script src="script/script.js"></script>
   <script>
   $( document ).ready(function() {
-    // set the date we're counting down to
-    var target_date = new Date("Jan 16, 2015").getTime();
+  //   // set the date we're counting down to
+  //   var target_date = new Date("Jan 16, 2015").getTime();
      
-    // variables for time units
-    var days, hours, minutes, seconds;
+  //   // variables for time units
+  //   var days, hours, minutes, seconds;
      
-    // get tag element
-    var countdown = document.getElementById("countdown");
+  //   // get tag element
+  //   var countdown = document.getElementById("countdown");
      
-    // update the tag with id "countdown" every 1 second
-    setInterval(function () {
+  //   // update the tag with id "countdown" every 1 second
+  //   setInterval(function () {
      
-        // find the amount of "seconds" between now and target
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
+  //       // find the amount of "seconds" between now and target
+  //       var current_date = new Date().getTime();
+  //       var seconds_left = (target_date - current_date) / 1000;
      
-        // do some time calculations
-        days = parseInt(seconds_left / 86400);
-        seconds_left = seconds_left % 86400;
+  //       // do some time calculations
+  //       days = parseInt(seconds_left / 86400);
+  //       seconds_left = seconds_left % 86400;
          
-        hours = parseInt(seconds_left / 3600);
-        seconds_left = seconds_left % 3600;
+  //       hours = parseInt(seconds_left / 3600);
+  //       seconds_left = seconds_left % 3600;
          
-        minutes = parseInt(seconds_left / 60);
-        seconds = parseInt(seconds_left % 60);
+  //       minutes = parseInt(seconds_left / 60);
+  //       seconds = parseInt(seconds_left % 60);
          
-        // format countdown string + set tag value
-        countdown.innerHTML = days + ":" + hours + ":"
-        + minutes + ":" + seconds;  
+  //       // format countdown string + set tag value
+  //       countdown.innerHTML = days + ":" + hours + ":"
+  //       + minutes + ":" + seconds;  
      
-    }, 1000);
+  //   }, 1000);
+
   });
   </script>
   <style>
@@ -66,11 +67,11 @@
 	<nav>
     <a href="class/info"><div class="info-link"></div></a>
 		<ul>
-      <li><a href="class/calendar">Calendar</a></li>
 			<li><a href="class/texts">Texts</a></li>
 			<li><a href="class/syllabus">Syllabus</a></li>
 			<li><a href="class/resources">Resources</a></li>
-			<li><a href="class/dump">Dump</a></li>
+      <li><a href="class/calendar">Calendar</a></li>
+			<!-- <li><a href="class/dump">Dump</a></li> -->
 		</ul>
 	</nav>
 
@@ -100,25 +101,7 @@
   </div>
 
   <div id="greeting">
-    Welcome!
-
-    <div class="people-home">
-      <a href="http://shoshigb.github.io/interactiveDesign/" target="_blank"><img src="images/avatar01.png"></a>
-      <a href="http://chasebooker.github.io/interactive-design/" target="_blank"><img src="images/avatar02.png"></a>
-      <a href="http://carrchadwick.github.io/interactive_design/" target="_blank"><img src="images/avatar03.png"></a>
-      <a href="http://lauraanncoombs.github.io/yale_interactive_design/" target="_blank"><img src="images/avatar04.png"></a>
-      <a href="http://waldendavis.github.io/interactive-design/" target="_blank"><img src="images/avatar05.png"></a>
-      <a href="http://bobbydresser.com/interactive-design" target="_blank"><img src="images/avatar06.png"></a>
-      <a href="http://lianfumerton-liu.github.io/interactive-design/" target="_blank"><img src="images/avatar07.png"></a>
-      <a href="http://martagalaz.github.io/interactive-design/" target="_blank"><img src="images/avatar08.png"></a>
-      <a href="http://cindyhwang.github.io/interactive-design/" target="_blank"><img src="images/avatar09.png"></a>
-      <a href="http://teddymathias.github.io/interactive-design/" target="_blank"><img src="images/avatar10.png"></a>
-      <a href="http://carypotter.github.io/interactive-design/" target="_blank"><img src="images/avatar11.png"></a>
-      <a href="http://kaideas.github.io/interactive/index.html" target="_blank"><img src="images/avatar12.png"></a>
-      <a href="http://mkvalentine.github.io/interactiveDesign/" target="_blank"><img src="images/avatar13.png"></a>
-      <a href="http://mariahxu.github.io/interactive-design/" target="_blank"><img src="images/avatar14.png"></a>
-    </div>
-  
+    Welcome!  
   </div>
 
   <script type="text/javascript">

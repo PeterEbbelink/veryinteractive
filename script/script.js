@@ -5,9 +5,9 @@ $(document).ready(function() {
   console.log($.cookie('theme'));
 
   if($.cookie('theme') == undefined) {
-    console.log("It's undefined");
+    console.log("The theme is undefined");
     $('body').removeClass($.cookie('theme'));
-    // $('body').addClass('december');
+    $('body').addClass('june2015');
     // $.cookie('theme', 'december',{ expires: 7, path: '/' });
   }
 
@@ -221,6 +221,34 @@ $(document).ready(function() {
   // function getPosition(offset, size) {
   //   return Math.round(-1*offset + Math.random() * (size+2*offset));
   // }
+
+  // Camera shutter effect
+
+  var audioElement = document.createElement('audio');
+  audioElement.setAttribute('src', '/sounds/camera_shutter.mp3');
+  audioElement.setAttribute('autoplay', 'autoplay');
+  //audioElement.load()
+
+  $.get();
+
+  function cameraSound() {
+    if (audioElement.paused) {
+      console.log("it's paused");
+      audioElement.play();
+    }
+    else {
+      audioElement.play();
+      console.log("you played it");
+    }
+  }
+
+  audioElement.addEventListener("load", function() {
+    cameraSound();
+  }, true);
+
+  $('html, body, a').click(function() {
+    cameraSound();
+  });
 
   //
   // Trigger a reset of all the snowflakes' positions

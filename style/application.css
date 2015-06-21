@@ -1386,6 +1386,65 @@ body.december .generic-container {
     pointer-events: none !important;
 }
 
+/* JUNE THEME */
+
+@font-face {
+    font-family: 'tcaregular';
+    src: url('../fonts/tca-webfont.eot');
+    src: url('../fonts/tca-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tca-webfont.woff2') format('woff2'),
+         url('../fonts/tca-webfont.woff') format('woff'),
+         url('../fonts/tca-webfont.ttf') format('truetype'),
+         url('../fonts/tca-webfont.svg#tcaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body.june2015 {
+  background: #FDEE2F;
+}
+
+body.june2015 #house {
+  background: #FDEE2F url('../images/town-june.svg') no-repeat;
+  background-size: 100% auto;
+}
+
+body.june2015 .document a:hover {
+  background-color: #fff;
+  background: url('../images/moving-underline.gif') repeat-x;
+  background-position: 0 100%;
+}
+
+body.june2015 .document.text,
+body.june2015 .document.text h2,
+body.june2015 #greeting {
+  font-family: 'tcaregular' !important;
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+body.june2015 .top-link a {
+  background: #FDEE2F;
+}
+
+body.june2015 a.library-item:hover,
+body.june2015 .top-link a:hover {
+  background: #fff !important;
+}
+
+/*body.june2015 .document,
+body.june2015 .document h2,
+body.june2015 .document.text .caption,
+body.june2015 .document.text .notes,
+body.june2015 .document.text blockquote,
+body.june2015 .document .centered h1 {
+  font-family: 'tcaregular' !important;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+}
+*/
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 895px) {
