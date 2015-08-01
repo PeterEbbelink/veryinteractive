@@ -47,11 +47,6 @@ ul.bullets li { list-style-type: circle; list-style: inside; }
 	max-width: 640px;
 }
 
-/*.document.text .float-left img,
-.document.text .float-right img,
-.document.text .caption {
-  float: left;
-}*/
 
 /* TYPOGRAPHY */
 
@@ -1386,7 +1381,7 @@ body.december .generic-container {
     pointer-events: none !important;
 }
 
-/* JUNE THEME */
+/* JUNE 2015 THEME */
 
 @font-face {
     font-family: 'tcaregular';
@@ -1433,18 +1428,260 @@ body.june2015 .top-link a:hover {
   background: #fff !important;
 }
 
-/*body.june2015 .document,
-body.june2015 .document h2,
-body.june2015 .document.text .caption,
-body.june2015 .document.text .notes,
-body.june2015 .document.text blockquote,
-body.june2015 .document .centered h1 {
-  font-family: 'tcaregular' !important;
-  font-size: 24px;
-  line-height: 30px;
+
+/* AUGUST 2015 THEME */
+
+body.home.august2015 {
+	overflow-y: hidden;
+}
+
+body.august2015 #house {
+  background: none;
+}
+
+body.august2015 #sky,
+body.august2015 #land {
+  width: 100%;
+  overflow:hidden;
+  position: fixed;
+}
+
+body.august2015 #sky {
+  height: 100%;
+  background:url('../images/bg-stars-august2015-static.png');
+}
+
+body.august2015 #land {
+  height: 60%;
+  top: 40%;
+  background: #000;
+}
+
+body.august2015 #moving-line {
+	background:url('../images/moving-underline-white-vertical-down.gif') repeat-y;
+	left: 49.95%;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+}
+
+body.august2015 video {
+	width: 100%;
+}
+
+body.august2015,
+body.august2015 .document.text,
+body.august2015 nav a {
+	background: #000 !important;
+	color: #fff;
+}
+
+body.august2015 .document.text {
+	background: #000;
+}
+
+body.august2015 nav {
+	border-bottom: 1px solid #fff;
+}
+
+body.august2015 .document a {
+	color: #fff;
+}
+
+body.august2015 .document a:hover {
+	color: #000;
+	background: #fff;
+}
+
+body.august2015,
+body.august2015 .document,
+body.august2015 .document h2,
+body.august2015 .document.text .caption,
+body.august2015 .document.text .notes,
+body.august2015 .document.text .notes h2,
+body.august2015 .document .centered h1,
+body.august2015 .document.text blockquote
+body.august2015 .document.text .caption,
+body.august2015 .document.text .notes {
+    font-family: 'Inconsolata', courier new, courier;
+	font-size: 17px;
+	line-height: 1.2;
+	-webkit-font-smoothing: antialiased;
+}
+
+body.august2015 .document h2 {
+	color: transparent;
+    text-shadow:
+    1px 0 0 rgba(255,255,255,0.1),
+    2px 0 0 rgba(255,255,255,0.1),
+    3px 0 0 rgba(255,255,255,0.1),
+    4px 0 0 rgba(255,255,255,0.1),
+    5px 0 0 rgba(255,255,255,0.1),
+    6px 0 0 rgba(255,255,255,0.1),
+    7px 0 0 rgba(255,255,255,0.1),
+    8px 0 0 rgba(255,255,255,0.1),
+    9px 0 0 rgba(255,255,255,0.1),
+    10px 0 0 rgba(255,255,255,0.1);
+    transition: text-shadow 0.1s ease;
+}
+
+body.august2015 .document.text h2 {
+	color: transparent;
+    text-shadow:
+    4px 0 0 rgba(255,255,255,0.1),
+    8px 0 0 rgba(255,255,255,0.1),
+    12px 0 0 rgba(255,255,255,0.1),
+    16px 0 0 rgba(255,255,255,0.1),
+    24px 0 0 rgba(255,255,255,0.1),
+    32px 0 0 rgba(255,255,255,0.1),
+    40px 0 0 rgba(255,255,255,0.1),
+    48px 0 0 rgba(255,255,255,0.1),
+    56px 0 0 rgba(255,255,255,0.1),
+    64px 0 0 rgba(255,255,255,0.1);
+    transition: text-shadow 0.5s ease;
+}
+
+body.august2015 .document h2:hover {
+	color: #fff;
+    text-shadow: none;
+}
+
+body.august2015 #greeting,
+body.august2015 .document.text,
+body.august2015 .document.text h2,
+body.august2015 .document.text .centered h1 {
+  font-family: 'Faster One', cursive;
+  font-size: 48px;
+  line-height: 60px;
   font-weight: normal;
 }
-*/
+
+body.august2015 .document a {
+	color: #fff;
+	background: url('../images/moving-underline-white.gif') repeat-x;
+	background-position: 0 100%;
+}
+
+body.august2015 .document a:hover {
+	background:#fff url('../images/moving-underline-white.gif') repeat-x;
+	color: #000;
+	background-position: 0 100%;
+}
+
+body.august2015 nav,
+body.august2015 .library-row,
+body.august2015 .top-link a {
+	border-color: #fff;
+}
+
+body.august2015 a.library-item,
+body.august2015 .top-link a {
+	background: #000;
+	color: #fff;
+}
+
+@-webkit-keyframes augustfifteen_pulse {
+    0% { background: #fff; color: #000; }
+    100% { background: #000; color: #fff; }
+}
+
+body.august2015 a.library-item:hover,
+body.august2015 .top-link a:hover {
+  background: #fff;
+  color: #000;
+  -webkit-animation: augustfifteen 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+body.august2015.simple-frame,
+body.august2015.exercises-in-style,
+body.august2015.website-for-a-future-event,
+body.august2015.living-aggregator {
+	color: #000;
+	background: #fff !important;
+}
+
+body.august2015.simple-frame a,
+body.august2015.exercises-in-style a,
+body.august2015.website-for-a-future-event a,
+body.august2015.living-aggregator a {
+	color: #000;
+	background:#fff url('../images/moving-underline.gif') repeat-x;
+	background-position: 0 100%;
+}
+
+body.august2015.simple-frame a:hover,
+body.august2015.exercises-in-style a:hover,
+body.august2015.website-for-a-future-event a:hover,
+body.august2015.living-aggregator a:hover {
+	color: #fff;
+	background:#000 url('../images/moving-underline-white.gif') repeat-x;
+	background-position: 0 100%;
+}
+
+body.august2015 .document a.simple-frame,
+body.august2015 .document a.exercises-in-style,
+body.august2015 .document a.website-for-a-future-event,
+body.august2015 .document a.living-aggregator {
+	background: #fff !important;
+	border-color: #fff !important;
+	color: #000;
+}
+
+body.august2015 .top-link a {
+	background: #000 !important;
+	border-color: #fff !important;
+}
+
+body.august2015 .top-link a:hover {
+	background: #fff !important;
+	border-color: #000 !important;
+}
+
+body.august2015 nav .home-link {
+	background: url('../images/home-white.svg') no-repeat;
+}
+
+
+body.august2015 nav .info-link {
+	background: url('../images/info-white.svg') no-repeat;
+}
+
+body.august2015 nav li.current,
+body.august2015 nav li.current:hover {
+	background: url('../images/bullet-white.svg') no-repeat;
+	background-size: 6px 6px;
+	background-position:center 20%;
+}
+
+body.august2015 nav li:hover {
+	background: url('../images/bullet-empty-white.svg') no-repeat;
+	background-size: 6px 6px;
+	background-position:center 24%;
+}
+
+body.august2015 .dots a {
+	background: url('../images/bullet-empty-white.svg') no-repeat;
+	background-size: 6px 6px;
+	margin-left: -4px;
+}
+
+body.august2015 .dots a:hover {
+	background: url('../images/bullet-white.svg') no-repeat;
+	background-size: 6px 6px;
+}
+
+body.august2015 .perec-box {
+	border-color: #fff !important;
+}
+
+body.august2015 #meta-bar {
+	border-color: #fff;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 895px) {

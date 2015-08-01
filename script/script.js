@@ -7,7 +7,7 @@ $(document).ready(function() {
   if($.cookie('theme') == undefined) {
     console.log("The theme is undefined");
     $('body').removeClass($.cookie('theme'));
-    $('body').addClass('june2015');
+    $('body').addClass('august2015');
     // $.cookie('theme', 'december',{ expires: 7, path: '/' });
   }
 
@@ -224,31 +224,30 @@ $(document).ready(function() {
 
   // Camera shutter effect
 
-  var audioElement = document.createElement('audio');
-  audioElement.setAttribute('src', '/sounds/camera_shutter.mp3');
-  audioElement.setAttribute('autoplay', 'autoplay');
-  //audioElement.load()
+  // var audioElement = document.createElement('audio');
+  // audioElement.setAttribute('src', '/sounds/camera_shutter.mp3');
+  // audioElement.setAttribute('autoplay', 'autoplay');
 
-  $.get();
+  // $.get();
 
-  function cameraSound() {
-    if (audioElement.paused) {
-      console.log("it's paused");
-      audioElement.play();
-    }
-    else {
-      audioElement.play();
-      console.log("you played it");
-    }
-  }
+  // function cameraSound() {
+  //   if (audioElement.paused) {
+  //     console.log("it's paused");
+  //     audioElement.play();
+  //   }
+  //   else {
+  //     audioElement.play();
+  //     console.log("you played it");
+  //   }
+  // }
 
-  audioElement.addEventListener("load", function() {
-    cameraSound();
-  }, true);
+  // audioElement.addEventListener("load", function() {
+  //   cameraSound();
+  // }, true);
 
-  $('html, body, a').click(function() {
-    cameraSound();
-  });
+  // $('html, body, a').click(function() {
+  //   cameraSound();
+  // });
 
   //
   // Trigger a reset of all the snowflakes' positions

@@ -1,0 +1,115 @@
+
+<!-- saved from url=(0061)http://player.midnight-madness.org/views/components/land.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css"></style></head><body><div class="road">
+  <!-- green horizon -->
+  <svg ng-show="!invalid" viewBox="0 0 400 200" preserveAspectRatio="none">
+    <!-- horizon -->
+    <line x1="0" y1="0" x2="400" y2="0" stroke-width="3" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <!-- left side of the road -->
+    <line x1="200" y1="0" x2="0" y2="200" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <!-- right side of the road -->
+    <line x1="200" y1="0" x2="400" y2="200" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+  </svg>
+  <!-- red horizon -->
+  <svg ng-show="invalid" viewBox="0 0 400 200" preserveAspectRatio="none">
+    <!-- horizon -->
+    <line x1="0" y1="0" x2="400" y2="0" stroke-width="3" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <!-- left side of the road -->
+    <line x1="200" y1="0" x2="0" y2="200" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <!-- right side of the road -->
+    <line x1="200" y1="0" x2="400" y2="200" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+  </svg>
+</div>
+
+<div class="line">
+  <!-- frozen green -->
+  <svg ng-show="!loggedIn &amp;&amp; !invalid" viewBox="0 0 400 95" preserveAspectRatio="none">
+    <g transform="translate(200, 0)">
+    <line y1="0" y2="0" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <line y1="1" y2="2" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <line y1="3" y2="6" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <line y1="8" y2="14" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <line y1="18" y2="30" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <line y1="38" y2="62" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    <line y1="78" y2="124" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke"></line>
+    </g>
+  </svg>
+  <!-- frozen red -->
+  <svg ng-show="invalid" viewBox="0 0 400 95" preserveAspectRatio="none">
+    <g transform="translate(200, 0)">
+    <line y1="0" y2="0" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <line y1="1" y2="2" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <line y1="3" y2="6" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <line y1="8" y2="14" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <line y1="18" y2="30" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <line y1="38" y2="62" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    <line y1="78" y2="124" stroke-width="1.5" stroke="#e03102" vector-effect="non-scaling-stroke"></line>
+    </g>
+  </svg>
+  <!-- normal moving -->
+  <svg ng-show="loggedIn &amp;&amp; !invalid &amp;&amp; !message &amp;&amp; !queue" viewBox="0 0 400 95" preserveAspectRatio="none">
+    <g transform="translate(200, 0)">
+    <line y1="0.626612" y2="1.25322" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="0" to="1" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="0" to="2" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="2.25322" y2="4.50645" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="1" to="3" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="2" to="6" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="6.13306" y2="11.0129" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="3" to="8" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="6" to="14" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="14.2661" y2="24.0258" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="8" to="18" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="14" to="30" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="30.5322" y2="50.0516" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="18" to="38" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="30" to="62" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="63.0645" y2="100.85" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="38" to="78" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="62" to="124" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="126.876" y2="124" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="78" to="156" dur="400ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    </g>
+  </svg>
+  <!-- fast moving -->
+  <svg ng-show="queue || message" viewBox="0 0 400 95" preserveAspectRatio="none">
+    <g transform="translate(200, 0)">
+    <line y1="0.802579" y2="1.60516" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="0" to="1" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="0" to="2" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="2.60516" y2="5.21031" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="1" to="3" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="2" to="6" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="7.01289" y2="12.4206" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="3" to="8" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="6" to="14" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="16.0258" y2="26.8413" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="8" to="18" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="14" to="30" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="34.0516" y2="55.6825" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="18" to="38" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="30" to="62" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="70.1031" y2="111.76" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="38" to="78" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+      <animate attributeName="y2" from="62" to="124" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="140.601" y2="124" stroke-width="1.5" stroke="#03d246" vector-effect="non-scaling-stroke">
+      <animate attributeName="y1" from="78" to="156" dur="250ms" begin="0" repeatCount="indefinite"></animate>
+    </line>
+    </g>
+  </svg>
+</div>
+
+</body></html>
