@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  $('span.current').hover(function(){
+    console.log('hi');
+    $('span.info').toggle();
+  });
+
   //If Cookie isn't blank (i.e. do we have a cookie set at all?)
 
   console.log($.cookie('theme'));

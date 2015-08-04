@@ -1570,16 +1570,16 @@ body.august2015 .document.text strong {
     width: 100%;
 }
 
+body.august2015 .document.text h2:hover,
+body.august2015 .document.text b:hover, 
+body.august2015 .document.text strong:hover  {
+	color: #fff;
+    text-shadow: none;
+}
+
 body.august2015 .document.text section.notes b {
 	text-shadow: none !important;
 	color: #fff;
-}
-
-body.august2015 .document.text h2:hover,
-body.august2015 .document.text b:hover, 
-body.august2015 .document.text strong:hover,  {
-	color: #fff;
-    text-shadow: none;
 }
 
 body.august2015 #greeting,
@@ -1669,6 +1669,17 @@ body.august2015 .document a.living-aggregator {
 	background: #fff !important;
 	border-color: #fff !important;
 	color: #000;
+}
+
+body.august2015 .document span.current {
+	background: #fff;
+	color: #000;
+	cursor: pointer;
+}
+
+body.august2015 .document span.info {
+	display: none;
+	font-style: italic;
 }
 
 body.august2015 .top-link a {
