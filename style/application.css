@@ -1504,29 +1504,55 @@ body.august2015 .document .centered h1,
 body.august2015 .document.text blockquote
 body.august2015 .document.text .caption,
 body.august2015 .document.text .notes {
-    font-family: 'Inconsolata', courier new, courier;
-	font-size: 17px;
-	line-height: 1.2;
 	-webkit-font-smoothing: antialiased;
+	font-family: Times New Roman, Times, serif;
+	font-size: 19px;
+	line-height: 1.2;
+}
+
+body.august2015 code,
+body.august2015 nav a,
+body.august2015 nav .current,
+body.august2015 .library-row h2,
+body.august2015 .accordion-year,
+body.august2015 .class-abbreviation,
+body.august2015 .motto,
+body.august2015 .document .side,
+body.august2015 .document .side h1,
+body.august2015 .metadata,
+body.august2015 .document.text .metadata,
+body.august2015 .document.text .metadata h1,
+body.august2015 .document .metadata h1,
+body.august2015 .back-to-top,
+body.august2015 #meta-bar,
+body.august2015 #circle,
+body.august2015 #town-announcement,
+body.august2015 .calendar-box,
+body.august2015 .calendar-box .date,
+body.august2015 .calendar-expanded .date,
+body.august2015 .calendar-box .class,
+body.august2015 .calendar-expanded .class {
+	-webkit-font-smoothing: antialiased;
+	font-family: Times New Roman, Times, serif;
+	font-size: 19px;
+	line-height: 1.2;
+}
+
+body.august2015 nav {
+	text-transform: none;
+}
+
+body.august2015 nav li {
+	margin-top: 2px;
 }
 
 body.august2015 .document h2 {
-	color: transparent;
-    text-shadow:
-    1px 0 0 rgba(255,255,255,0.1),
-    2px 0 0 rgba(255,255,255,0.1),
-    3px 0 0 rgba(255,255,255,0.1),
-    4px 0 0 rgba(255,255,255,0.1),
-    5px 0 0 rgba(255,255,255,0.1),
-    6px 0 0 rgba(255,255,255,0.1),
-    7px 0 0 rgba(255,255,255,0.1),
-    8px 0 0 rgba(255,255,255,0.1),
-    9px 0 0 rgba(255,255,255,0.1),
-    10px 0 0 rgba(255,255,255,0.1);
-    transition: text-shadow 0.1s ease;
+	font-weight: normal;
 }
 
-body.august2015 .document.text h2 {
+body.august2015 .document.text h2,
+body.august2015 .document.text b, 
+body.august2015 .document.text strong {
 	color: transparent;
     text-shadow:
     4px 0 0 rgba(255,255,255,0.1),
@@ -1540,9 +1566,18 @@ body.august2015 .document.text h2 {
     56px 0 0 rgba(255,255,255,0.1),
     64px 0 0 rgba(255,255,255,0.1);
     transition: text-shadow 0.5s ease;
+    display: block;
+    width: 100%;
 }
 
-body.august2015 .document h2:hover {
+body.august2015 .document.text section.notes b {
+	text-shadow: none !important;
+	color: #fff;
+}
+
+body.august2015 .document.text h2:hover,
+body.august2015 .document.text b:hover, 
+body.august2015 .document.text strong:hover,  {
 	color: #fff;
     text-shadow: none;
 }
@@ -1552,9 +1587,14 @@ body.august2015 .document.text,
 body.august2015 .document.text h2,
 body.august2015 .document.text .centered h1 {
   font-family: 'Faster One', cursive;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: normal;
+}
+
+body.august2015 .document.text b, 
+body.august2015 .document.text strong {
+	font-weight: normal;
 }
 
 body.august2015 .document a {
@@ -1680,6 +1720,9 @@ body.august2015 .perec-box {
 
 body.august2015 #meta-bar {
 	border-color: #fff;
+}
+
+.extra-info {
 }
 
 /* MEDIA QUERIES */
