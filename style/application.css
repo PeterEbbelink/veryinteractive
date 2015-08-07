@@ -1448,7 +1448,7 @@ body.august2015 #land {
 
 body.august2015 #sky {
   height: 100%;
-  background:url('../images/bg-stars-august2015-static.png');
+  background:url('../images/starry.png');
 }
 
 body.august2015 #land {
@@ -1617,8 +1617,8 @@ body.august2015 .top-link a {
 
 body.august2015 a.library-item,
 body.august2015 .top-link a {
-	background: #000;
 	color: #fff;
+	background: #000 url('../images/starry.png');
 }
 
 @-webkit-keyframes augustfifteen_pulse {
@@ -1683,7 +1683,7 @@ body.august2015 .document span.info {
 }
 
 body.august2015 .top-link a {
-	background: #000 !important;
+	background: #000 url('../images/starry.png');
 	border-color: #fff !important;
 }
 
