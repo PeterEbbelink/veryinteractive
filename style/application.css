@@ -1342,12 +1342,12 @@ body.december .document.text blockquote {
 	-webkit-font-smoothing: antialiased;*/
 }
 
-/*body.december .document,
+body.december .document,
 body.december .generic-container {
 	position: absolute;
 	left: 0;
 	right: 0;
-}*/
+}
 
 #snowflakeContainer {
 	position: absolute;
