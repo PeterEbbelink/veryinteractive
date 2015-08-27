@@ -12,7 +12,7 @@ $(document).ready(function() {
   if($.cookie('theme') == undefined) {
     console.log("The theme is undefined");
     $('body').removeClass($.cookie('theme'));
-    $('body').addClass('default');
+    $('body').addClass('august2015');
     // $.cookie('theme', 'december',{ expires: 7, path: '/' });
   }
 
